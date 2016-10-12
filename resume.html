@@ -1,0 +1,3560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Yes, this is the resume you're looking for.</title>
+
+<style type='text/css'>
+/*****************************************
+  Resume for John Medema, 04-2007.
+  With the exception of Whatever:hover,
+  all CSS/XHTML/Javascript coded by me.
+  Permission to copy/reproduce/modify
+  for personal use is given, as long
+  as primary/original authorship is retained.
+*****************************************/
+
+form { display: inline; margin-bottom: 0; }
+H1 { display: inline; font-size: 187.5%; margin-right: 0; margin-bottom: 0; }
+H2 { display: inline; font-size: 130%; margin-right: 0; margin-bottom: 0; }
+H3 { display: inline; font-size: 187.5%; margin-right: 0; margin-bottom: 0; }
+H4 { display: inline; font-size: 187.5%; margin-right: 0; margin-bottom: 0; }
+H5 { display: inline; font-size: 187.5%; margin-right: 0; margin-bottom: 0; }
+H6 { display: inline; font-size: 187.5%; margin-right: 0; margin-bottom: 0; }
+
+table
+{
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0;
+}
+
+tr.games_ttt_row
+{
+}
+
+tr.games_chess_row
+{
+}
+
+td
+{
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+
+/*
+	The fake_list css stuff is so that we can emulate list elements without browsers
+	screwing up the display.  Firefox and Opera display lists tabbed in so that the
+	bullet is even with where the text would be.  IE (all versions) display bulletted
+	lists with the text unshifted at all, and the bullet off to the left.  Depending on
+	your platform preference, either 1) Firefox and Opera illegally shift text, or
+	2) IE illegally misplaces the bullet.  Either way, we have incompatible and
+	irreconciliable formatting.  This way is an ugly hack, but at least it works on all
+	browsers.
+*/
+td.fake_list_bullet
+{
+	vertical-align: middle;
+	text-align: right;
+	font-weight: bold;
+	padding-left: 2em;
+	padding-right: 1em;
+}
+
+td.fake_list_text
+{
+	vertical-align: middle;
+	text-align: left;
+}
+
+td.education_grade
+{
+	padding-left: 1em;
+}
+
+td.games_ttt_cell
+{
+	padding-top: .3em;
+	padding-right: .5em;
+	padding-bottom: .3em;
+	padding-left: .5em;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+}
+
+td.games_chess_cell_light
+{
+	height: 1.4em;
+	width: 1.5em;
+	vertical-align: bottom;
+	text-align: center;
+	font-weight: bold;
+	background-color: #999900;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	margin: 0;
+	padding: 0;
+}
+
+td.games_chess_cell_dark
+{
+	height: 1.4em;
+	width: 1.5em;
+	vertical-align: bottom;
+	text-align: center;
+	font-weight: bold;
+	background-color: #707000;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	margin: 0;
+	padding: 0;
+}
+
+div.games_chess_cell_div_selected
+{
+	width: 100%;
+	background-color: #999999;
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+div.games_chess_cell_div_potential_move
+{
+	width: 100%;
+	background-color: #FF4444;
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+ul
+{
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	margin-left:0;
+}
+
+body
+{
+	/*
+	STYLE="font-family:sans-serif; font-size:large;
+	font-style:italic; background:#ff0 none; color:#000; width:10em">
+	*/
+
+	font-family: Arial;
+	margin-top: 1em;
+	margin-right: 10%;
+}
+
+@media print
+{
+	/*body{ padding-left: 0; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0; }*/
+	body{ padding: 0; margin: 0; }
+	#navbar { display: none; }
+	#dummy { display: none; }
+	#games { display: none; }
+	#printOnly { display: block; }
+}
+
+
+
+/* This is to be used with the 'ul' tag to create a left justified nav bar. */
+#header
+{
+	padding-left: 5%;
+	text-align: center;
+	/* this would be in 'body' above, but IE doesn't allow it up there */
+	font-size: 80%;
+}
+
+#main
+{
+	padding-left: 5%;
+	/* this would be in 'body' above, but IE doesn't allow it up there */
+	font-size: 80%;
+}
+/* these two entries are because IE6+ does not correctly apply font sizes in tables */
+#main table
+{
+	font-size: 100%;
+}
+#main td.fake_list_text
+{
+	font-size: 100%;
+}
+
+#navbar
+{
+	width: 18ex;
+	margin-left:2ex;
+	margin-right:2ex;
+}
+
+
+ul.navbar
+{
+	padding: 0;
+	border: 0;
+	margin: 0;
+	list-style-type: none;
+	/* this would be in 'body' above, but IE doesn't allow it up there */
+	font-size: 80%;
+}
+
+.navbarHeader
+{
+	font-size: 120%;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+	color: black;
+	background: #CC0000;
+	width: 100%;
+	border-color: white;
+	border-style: solid;
+	border-top-width: 0;
+	border-right-width: 0;
+/*	border-bottom-width: 1;*/
+	border-left-width: 0;
+	padding-top: .35em;
+	padding-right: .1em;
+	padding-bottom: .35em;
+	padding-left: .35em;
+	margin-left: 0;
+}
+
+.navbarEntry
+{
+	font-size: 100%;
+	font-weight: normal;
+	text-align: left;
+	display: block;
+	color: black;
+	background: white;
+	width: 100%;
+	margin-bottom: .40em;
+	border-color: #CC0000;
+	border-style: solid;
+/*	border-left-width: 1;*/
+	border-top-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	padding-top: .40em;
+	padding-right: 0;
+	padding-bottom: .40em;
+	padding-left: .35em;
+}
+
+li.navbarEntry
+{
+	margin-left: 0;
+}
+
+li.navbarEntry:hover
+{
+	font-weight: bold;
+	color: black;
+	background: #CC0000;
+	cursor: pointer;
+}
+
+
+.section { display: none; }
+.xhtml_dummy { display: inline; }
+
+#printOnly { font-size: 90%; }
+/*  */
+
+strong
+{
+	font-family: arial;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.important
+{
+	color: #808000;
+}
+
+
+/* to make buttons look like hyperlinks */
+input.hyperlink
+{
+	display: inline;
+	/*width: 50%;*/
+	text-align: left;
+	text-decoration: underline;
+	color: blue;
+	background-color: transparent;
+	padding-left: 0;
+	padding-right: 0;
+	border-style: none;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-left: 0;
+}
+</style>
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+/*******************************************************************************/
+/**
+ *	Whatever:hover - V1.42.060206 - hover & active
+ *	------------------------------------------------------------
+ *	(c) 2005 - Peter Nederlof
+ *	Peterned - http://www.xs4all.nl/~peterned/
+ *	License  - http://creativecommons.org/licenses/LGPL/2.1/
+ *
+ *	Whatever:hover is free software; you can redistribute it and/or
+ *	modify it under the terms of the GNU Lesser General Public
+ *	License as published by the Free Software Foundation; either
+ *	version 2.1 of the License, or (at your option) any later version.
+ *
+ *	Whatever:hover is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ *	Lesser General Public License for more details.
+ *
+ *	Credits and thanks to:
+ *	Arnoud Berendsen, Martin Reurings, Robert Hanson
+ *
+ *	howto: body { behavior:url("csshover.htc"); }
+ *	------------------------------------------------------------
+ */
+
+var csshoverReg = /(^|\s)(([^a]([^ ]+)?)|(a([^#.][^ ]+)+)):(hover|active)/i, currentSheet, doc = window.document, hoverEvents = [], activators = {	onhover:{on:'onmouseover', off:'onmouseout'},	onactive:{on:'onmousedown', off:'onmouseup'}}
+
+function parseStylesheets()
+{
+	if(!/MSIE (5|6|7)/.test(navigator.userAgent)) return;
+	window.attachEvent('onunload', unhookHoverEvents);
+	var sheets = doc.styleSheets, l = sheets.length;
+	for(var i=0; i<l; i++)
+		parseStylesheet(sheets[i]);
+}
+
+function parseStylesheet(sheet)
+{
+	if(sheet.imports) {
+		try {
+			var imports = sheet.imports, l = imports.length;
+			for(var i=0; i<l; i++) parseStylesheet(sheet.imports[i]);
+		} catch(securityException){}
+	}
+
+	try {
+		var rules = (currentSheet = sheet).rules, l = rules.length;
+		for(var j=0; j<l; j++) parseCSSRule(rules[j]);
+	} catch(securityException){}
+}
+
+function parseCSSRule(rule)
+{
+	var select = rule.selectorText, style = rule.style.cssText;
+	if(!csshoverReg.test(select) || !style) return;
+
+	var pseudo = select.replace(/[^:]+:([a-z-]+).*/i, 'on$1');
+	var newSelect = select.replace(/(\.([a-z0-9_-]+):[a-z]+)|(:[a-z]+)/gi, '.$2' + pseudo);
+	var className = (/\.([a-z0-9_-]*on(hover|active))/i).exec(newSelect)[1];
+	var affected = select.replace(/:(hover|active).*$/, '');
+	var elements = getElementsBySelect(affected);
+	if(elements.length == 0) return;
+
+	currentSheet.addRule(newSelect, style);
+	for(var i=0; i<elements.length; i++)
+		new HoverElement(elements[i], className, activators[pseudo]);
+}
+
+function HoverElement(node, className, events)
+{
+	if(!node.hovers) node.hovers = {};
+	if(node.hovers[className]) return;
+	node.hovers[className] = true;
+	hookHoverEvent(node, events.on, function() { node.className += ' ' + className; });
+	hookHoverEvent(node, events.off, function() { node.className = node.className.replace(new RegExp('\\s+'+className, 'g'),''); });
+}
+
+function hookHoverEvent(node, type, handler)
+{
+		node.attachEvent(type, handler);
+		hoverEvents[hoverEvents.length] = {	node:node, type:type, handler:handler };
+}
+
+function unhookHoverEvents()
+{
+	for(var e,i=0; i<hoverEvents.length; i++)
+	{
+		e = hoverEvents[i];
+		e.node.detachEvent(e.type, e.handler);
+	}
+}
+
+function getElementsBySelect(rule)
+{
+	var parts, nodes = [doc];
+	parts = rule.split(' ');
+	for(var i=0; i<parts.length; i++)
+	{
+		nodes = getSelectedNodes(parts[i], nodes);
+	}	return nodes;
+}
+
+function getSelectedNodes(select, elements)
+{
+	var result, node, nodes = [];
+	var identify = (/\#([a-z0-9_-]+)/i).exec(select);
+	if(identify)
+	{
+		var element = doc.getElementById(identify[1]);
+		return element? [element]:nodes;
+	}
+
+	var classname = (/\.([a-z0-9_-]+)/i).exec(select);
+	var tagName = select.replace(/(\.|\#|\:)[a-z0-9_-]+/i, '');
+	var classReg = classname? new RegExp('\\b' + classname[1] + '\\b'):false;
+	for(var i=0; i<elements.length; i++)
+	{
+		result = tagName? elements[i].all.tags(tagName):elements[i].all;
+		for(var j=0; j<result.length; j++)
+		{
+			node = result[j];
+			if(classReg && !classReg.test(node.className)) continue;
+			nodes[nodes.length] = node;
+		}
+	}
+	return nodes;
+}
+
+/******************************************************************************************/
+
+
+
+
+
+function clearAll()
+{
+	var mySection;
+	mySection = document.getElementById("summary");
+	mySection.style.display = "none";
+	mySection = document.getElementById("employmentHistory");
+	mySection.style.display = "none";
+	mySection = document.getElementById("skills");
+	mySection.style.display = "none";
+	mySection = document.getElementById("achievements");
+	mySection.style.display = "none";
+	mySection = document.getElementById("examples");
+	mySection.style.display = "none";
+	mySection = document.getElementById("education");
+	mySection.style.display = "none";
+	mySection = document.getElementById("aboutMe");
+	mySection.style.display = "none";
+	mySection = document.getElementById("references");
+	mySection.style.display = "none";
+	mySection = document.getElementById("games");
+	mySection.style.display = "none";
+}
+
+function menuSummaryClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("summary");
+	mySection.style.display = "block";
+}
+function menuEmploymentHistoryClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("employmentHistory");
+	mySection.style.display = "block";
+}
+function menuSkillsClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("skills");
+	mySection.style.display = "block";
+}
+function menuAchievementsClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("achievements");
+	mySection.style.display = "block";
+}
+function menuExamplesClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("examples");
+	mySection.style.display = "block";
+}
+function menuEducationClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("education");
+	mySection.style.display = "block";
+}
+function menuAboutMeClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("aboutMe");
+	mySection.style.display = "block";
+}
+function menuReferencesClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("references");
+	mySection.style.display = "block";
+}
+function menuGamesClicked()
+{
+	clearAll();
+	var mySection = document.getElementById("games");
+	mySection.style.display = "block";
+}
+
+
+function games_oracle()
+{
+	var input = document.getElementById("games_oracle_input");
+	var output = document.getElementById("games_oracle_response");
+	if (input.value == "")
+	{
+		output.innerHTML = "Seriously, how do you expect me to answer this?";
+		return;
+	}
+//	else
+//	  { input.value = ""; }
+
+	var responses = new Array();
+	responses.push("System Error!");
+	responses.push("Line Busy.");
+	responses.push("Uhh...can you repeat that?");
+	responses.push("Do I have to answer that?");
+	responses.push("Are you sure you want to ask that?");
+	responses.push("You'd know that better than I would...");
+	responses.push("Don't insult my intelligence!");
+
+	var now = new Date();
+	var seed = now.getSeconds();
+	responseIdx = Math.floor( Math.random(seed) * responses.length );
+	output.innerHTML = responses[responseIdx];
+}
+
+
+// ready for this?  When setting "&nbsp;" in javascript,
+// reading this value returns different values depending
+// on the browser (for innerHTML only?!?).
+// When setting to "&nbsp;":
+// FF: reading returns "&nbsp;"
+// IE: reading returns "&nbsp;"
+// Opera: reading returns " "
+//
+// The moral of the story is that all web browsers suck.  In order
+// to work around this, when writing values I am using "&nbsp;".
+// Before reading any values, I use this function to determine
+// what I should be looking for ("&nbsp;" or " ").
+function games_getNBSP()
+{
+	var browserCheck = document.getElementById("games_browserCheck");
+	browserCheck.innerHTML = "&nbsp;";
+	return browserCheck.innerHTML;
+}
+
+
+function games_ttt_reset()
+{
+	var nbsp = games_getNBSP();
+	var status = document.getElementById("games_ttt_status");
+	status.innerHTML = "Player X's turn";
+	var r0c0 = document.getElementById("games_ttt_r0c0");
+	var r0c1 = document.getElementById("games_ttt_r0c1");
+	var r0c2 = document.getElementById("games_ttt_r0c2");
+	var r1c0 = document.getElementById("games_ttt_r1c0");
+	var r1c1 = document.getElementById("games_ttt_r1c1");
+	var r1c2 = document.getElementById("games_ttt_r1c2");
+	var r2c0 = document.getElementById("games_ttt_r2c0");
+	var r2c1 = document.getElementById("games_ttt_r2c1");
+	var r2c2 = document.getElementById("games_ttt_r2c2");
+	r0c0.innerHTML = "&nbsp;";
+	r0c1.innerHTML = "&nbsp;";
+	r0c2.innerHTML = "&nbsp;";
+	r1c0.innerHTML = "&nbsp;";
+	r1c1.innerHTML = "&nbsp;";
+	r1c2.innerHTML = "&nbsp;";
+	r2c0.innerHTML = "&nbsp;";
+	r2c1.innerHTML = "&nbsp;";
+	r2c2.innerHTML = "&nbsp;";
+}
+
+function games_ttt_checkForWinner(grid)
+{
+	var returnVal = false;
+	var nbsp = games_getNBSP();
+	var status = document.getElementById("games_ttt_status");
+
+	if(
+		(grid[0][0].innerHTML == "X" && grid[0][1].innerHTML == "X" && grid[0][2].innerHTML == "X") ||
+		(grid[1][0].innerHTML == "X" && grid[1][1].innerHTML == "X" && grid[1][2].innerHTML == "X") ||
+		(grid[2][0].innerHTML == "X" && grid[2][1].innerHTML == "X" && grid[2][2].innerHTML == "X") ||
+
+		(grid[0][0].innerHTML == "X" && grid[1][0].innerHTML == "X" && grid[2][0].innerHTML == "X") ||
+		(grid[0][1].innerHTML == "X" && grid[1][1].innerHTML == "X" && grid[2][1].innerHTML == "X") ||
+		(grid[0][2].innerHTML == "X" && grid[1][2].innerHTML == "X" && grid[2][2].innerHTML == "X") ||
+
+		(grid[0][0].innerHTML == "X" && grid[1][1].innerHTML == "X" && grid[2][2].innerHTML == "X") ||
+		(grid[0][2].innerHTML == "X" && grid[1][1].innerHTML == "X" && grid[2][0].innerHTML == "X")
+	  )
+	{
+		status.innerHTML = "Player X wins!";
+		return true;
+	}
+
+	if(
+		(grid[0][0].innerHTML == "O" && grid[0][1].innerHTML == "O" && grid[0][2].innerHTML == "O") ||
+		(grid[1][0].innerHTML == "O" && grid[1][1].innerHTML == "O" && grid[1][2].innerHTML == "O") ||
+		(grid[2][0].innerHTML == "O" && grid[2][1].innerHTML == "O" && grid[2][2].innerHTML == "O") ||
+
+		(grid[0][0].innerHTML == "O" && grid[1][0].innerHTML == "O" && grid[2][0].innerHTML == "O") ||
+		(grid[0][1].innerHTML == "O" && grid[1][1].innerHTML == "O" && grid[2][1].innerHTML == "O") ||
+		(grid[0][2].innerHTML == "O" && grid[1][2].innerHTML == "O" && grid[2][2].innerHTML == "O") ||
+
+		(grid[0][0].innerHTML == "O" && grid[1][1].innerHTML == "O" && grid[2][2].innerHTML == "O") ||
+		(grid[0][2].innerHTML == "O" && grid[1][1].innerHTML == "O" && grid[2][0].innerHTML == "O")
+	  )
+	{
+		status.innerHTML = "Player O wins!";
+		return true;
+	}
+
+
+	// now that we know there is no definitive winner,
+	// check for a tie game...
+	var foundEmpty = false;
+	var i, j;
+	for(i=0; i<3; i++)
+	{
+	  for( j=0; j<3; j++)
+	  {
+		if( grid[i][j].innerHTML == nbsp )
+		{
+			foundEmpty = true;
+			break;
+		}
+	  }
+	  if( foundEmpty )
+	    { break; }
+	}
+	if( ! foundEmpty )
+	{
+		status.innerHTML = "It's a tie!";
+		return true;
+	}
+	return false;
+}
+
+function games_ttt_cellClicked(el)
+{
+	// pretend nothing happened if the cell has already been chosen
+	var nbsp = games_getNBSP();
+	if( el.innerHTML != nbsp )
+	  { return; }
+
+	var grid = new Array();
+	var row = new Array();
+	var status = document.getElementById("games_ttt_status");
+	//status.innerHTML = el.id;
+	row.push(document.getElementById("games_ttt_r0c0"));
+	row.push(document.getElementById("games_ttt_r0c1"));
+	row.push(document.getElementById("games_ttt_r0c2"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_ttt_r1c0"));
+	row.push(document.getElementById("games_ttt_r1c1"));
+	row.push(document.getElementById("games_ttt_r1c2"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_ttt_r2c0"));
+	row.push(document.getElementById("games_ttt_r2c1"));
+	row.push(document.getElementById("games_ttt_r2c2"));
+	grid.push(row);
+	row = new Array();
+
+	// do nothing if the game is already over...
+	var gameOver = games_ttt_checkForWinner(grid);
+	if( gameOver )
+	  { return; }
+
+	// find out the turn by counting filled grids.
+	var turnsToGo = 8;
+	if( grid[0][0].innerHTML != nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( grid[0][1].innerHTML  != nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( grid[0][2].innerHTML != nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( grid[1][0].innerHTML != nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( grid[1][1].innerHTML != nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( grid[1][2].innerHTML!= nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( grid[2][0].innerHTML!= nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( grid[2][1].innerHTML!= nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( grid[2][2].innerHTML!= nbsp )
+	  { turnsToGo = turnsToGo - 1; }
+	if( (turnsToGo % 2) == 0 )
+	{
+		el.innerHTML = "X";
+		status.innerHTML = "Player O's turn";
+	}
+	else
+	{
+		el.innerHTML = "O";
+		status.innerHTML = "Player X's turn";
+	}
+/*
+var debug = "";
+var i, j;
+for(i=0; i<3; i++)
+{
+  for( j=0; j<3; j++)
+  {
+    if( grid[i][j].innerHTML != nbsp )
+      { debug += grid[i][j].innerHTML; }
+	else
+	  { debug += "*"; }
+  }
+  debug += "\n";
+}
+alert(debug);
+*/
+	gameOver = games_ttt_checkForWinner(grid);
+	if( gameOver )
+	  { return; }
+
+
+
+
+	// only do this stuff in a single player game
+	var singlePlayer = document.getElementById("games_ttt_singlePlayer");
+	if(singlePlayer.checked)
+	{
+		//make a random choice for "2nd" player
+		var autoEl;
+		var now = new Date();
+		var seed = now.getSeconds();
+		// the number of empty boxes to skip before
+		// making the auto-choice
+		var boxIdx = Math.floor( Math.random(seed) * turnsToGo );
+		var i, j;
+		for(i=0; i<3; i++)
+		{
+		  for( j=0; j<3; j++)
+		  {
+			if( grid[i][j].innerHTML == nbsp )
+			{
+				if( boxIdx == 0 )
+				{
+					autoEl = grid[i][j];
+					i = 999;
+					j = 999;
+				}
+				boxIdx = boxIdx - 1;
+			}
+		  }
+		}
+
+		turnsToGo = turnsToGo - 1;
+		if( (turnsToGo % 2) == 0 )
+		{
+			autoEl.innerHTML = "X";
+			status.innerHTML = "Player O's turn";
+		}
+		else
+		{
+			autoEl.innerHTML = "O";
+			status.innerHTML = "Player X's turn";
+		}
+
+		gameOver = games_ttt_checkForWinner(grid);
+		if( gameOver )
+		  { return; }
+	}
+}
+function games_ttt_r0c0Clicked()
+{
+	var el = document.getElementById("games_ttt_r0c0");
+	games_ttt_cellClicked(el);
+}
+function games_ttt_r0c1Clicked()
+{
+	var el = document.getElementById("games_ttt_r0c1");
+	games_ttt_cellClicked(el);
+}
+function games_ttt_r0c2Clicked()
+{
+	var el = document.getElementById("games_ttt_r0c2");
+	games_ttt_cellClicked(el);
+}
+function games_ttt_r1c0Clicked()
+{
+	var el = document.getElementById("games_ttt_r1c0");
+	games_ttt_cellClicked(el);
+}
+function games_ttt_r1c1Clicked()
+{
+	var el = document.getElementById("games_ttt_r1c1");
+	games_ttt_cellClicked(el);
+}
+function games_ttt_r1c2Clicked()
+{
+	var el = document.getElementById("games_ttt_r1c2");
+	games_ttt_cellClicked(el);
+}
+function games_ttt_r2c0Clicked()
+{
+	var el = document.getElementById("games_ttt_r2c0");
+	games_ttt_cellClicked(el);
+}
+function games_ttt_r2c1Clicked()
+{
+	var el = document.getElementById("games_ttt_r2c1");
+	games_ttt_cellClicked(el);
+}
+function games_ttt_r2c2Clicked()
+{
+	var el = document.getElementById("games_ttt_r2c2");
+	games_ttt_cellClicked(el);
+}
+
+
+
+
+
+function games_chess_setup_board(whichBoard)
+{
+	var dummy = "";
+	if( whichBoard == "dummy" )
+	  { dummy = "dummy_"; }
+
+	var grid = new Array();
+	row = new Array();
+	row.push(document.getElementById("games_chess_" + dummy + "r0c0"));
+	row.push(document.getElementById("games_chess_" + dummy + "r0c1"));
+	row.push(document.getElementById("games_chess_" + dummy + "r0c2"));
+	row.push(document.getElementById("games_chess_" + dummy + "r0c3"));
+	row.push(document.getElementById("games_chess_" + dummy + "r0c4"));
+	row.push(document.getElementById("games_chess_" + dummy + "r0c5"));
+	row.push(document.getElementById("games_chess_" + dummy + "r0c6"));
+	row.push(document.getElementById("games_chess_" + dummy + "r0c7"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_chess_" + dummy + "r1c0"));
+	row.push(document.getElementById("games_chess_" + dummy + "r1c1"));
+	row.push(document.getElementById("games_chess_" + dummy + "r1c2"));
+	row.push(document.getElementById("games_chess_" + dummy + "r1c3"));
+	row.push(document.getElementById("games_chess_" + dummy + "r1c4"));
+	row.push(document.getElementById("games_chess_" + dummy + "r1c5"));
+	row.push(document.getElementById("games_chess_" + dummy + "r1c6"));
+	row.push(document.getElementById("games_chess_" + dummy + "r1c7"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_chess_" + dummy + "r2c0"));
+	row.push(document.getElementById("games_chess_" + dummy + "r2c1"));
+	row.push(document.getElementById("games_chess_" + dummy + "r2c2"));
+	row.push(document.getElementById("games_chess_" + dummy + "r2c3"));
+	row.push(document.getElementById("games_chess_" + dummy + "r2c4"));
+	row.push(document.getElementById("games_chess_" + dummy + "r2c5"));
+	row.push(document.getElementById("games_chess_" + dummy + "r2c6"));
+	row.push(document.getElementById("games_chess_" + dummy + "r2c7"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_chess_" + dummy + "r3c0"));
+	row.push(document.getElementById("games_chess_" + dummy + "r3c1"));
+	row.push(document.getElementById("games_chess_" + dummy + "r3c2"));
+	row.push(document.getElementById("games_chess_" + dummy + "r3c3"));
+	row.push(document.getElementById("games_chess_" + dummy + "r3c4"));
+	row.push(document.getElementById("games_chess_" + dummy + "r3c5"));
+	row.push(document.getElementById("games_chess_" + dummy + "r3c6"));
+	row.push(document.getElementById("games_chess_" + dummy + "r3c7"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_chess_" + dummy + "r4c0"));
+	row.push(document.getElementById("games_chess_" + dummy + "r4c1"));
+	row.push(document.getElementById("games_chess_" + dummy + "r4c2"));
+	row.push(document.getElementById("games_chess_" + dummy + "r4c3"));
+	row.push(document.getElementById("games_chess_" + dummy + "r4c4"));
+	row.push(document.getElementById("games_chess_" + dummy + "r4c5"));
+	row.push(document.getElementById("games_chess_" + dummy + "r4c6"));
+	row.push(document.getElementById("games_chess_" + dummy + "r4c7"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_chess_" + dummy + "r5c0"));
+	row.push(document.getElementById("games_chess_" + dummy + "r5c1"));
+	row.push(document.getElementById("games_chess_" + dummy + "r5c2"));
+	row.push(document.getElementById("games_chess_" + dummy + "r5c3"));
+	row.push(document.getElementById("games_chess_" + dummy + "r5c4"));
+	row.push(document.getElementById("games_chess_" + dummy + "r5c5"));
+	row.push(document.getElementById("games_chess_" + dummy + "r5c6"));
+	row.push(document.getElementById("games_chess_" + dummy + "r5c7"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_chess_" + dummy + "r6c0"));
+	row.push(document.getElementById("games_chess_" + dummy + "r6c1"));
+	row.push(document.getElementById("games_chess_" + dummy + "r6c2"));
+	row.push(document.getElementById("games_chess_" + dummy + "r6c3"));
+	row.push(document.getElementById("games_chess_" + dummy + "r6c4"));
+	row.push(document.getElementById("games_chess_" + dummy + "r6c5"));
+	row.push(document.getElementById("games_chess_" + dummy + "r6c6"));
+	row.push(document.getElementById("games_chess_" + dummy + "r6c7"));
+	grid.push(row);
+	row = new Array();
+	row.push(document.getElementById("games_chess_" + dummy + "r7c0"));
+	row.push(document.getElementById("games_chess_" + dummy + "r7c1"));
+	row.push(document.getElementById("games_chess_" + dummy + "r7c2"));
+	row.push(document.getElementById("games_chess_" + dummy + "r7c3"));
+	row.push(document.getElementById("games_chess_" + dummy + "r7c4"));
+	row.push(document.getElementById("games_chess_" + dummy + "r7c5"));
+	row.push(document.getElementById("games_chess_" + dummy + "r7c6"));
+	row.push(document.getElementById("games_chess_" + dummy + "r7c7"));
+	grid.push(row);
+
+	return grid;
+}
+
+
+// Another gem...  When reading/setting a color, each main browser
+// (FF, Opera, and IE) each store the values in a different fashion.
+// When setting to a color code (ex. "white"):
+// FF: reading returns "white"
+// IE: reading returns "white"
+// Opera: reading returns "#ffffff"
+//
+// When setting to a hex value (ex. "#ffffff"):
+// FF: reading returns "RGB: (FF, FF, FF)"
+// IE: reading returns "#ffffff"
+// Opera reading returns "#ffffff"
+//
+// The moral of the story is that all web browsers suck.  In order
+// to work around this, when writing values I am using color codes.
+// Before reading any color codes, I use this function to determine
+// what I should be looking for (hex value or color code).  So in
+// this program, when reading values can be tricky, but I am *always*
+// writing the values using color codes.
+function games_chess_getColors()
+{
+	var returnArray = new Array();
+	var browserCheck = document.getElementById("games_browserCheck");
+	browserCheck.style.color = "white";
+	if( browserCheck.style.color == "white" )
+	{
+		returnArray.push("white");
+		returnArray.push("black");
+	}
+	else if( browserCheck.style.color == "#ffffff" )
+	{
+		returnArray.push("#ffffff");
+		returnArray.push("#000000");
+	}
+	return returnArray;
+}
+
+
+function games_chess_reset()
+{
+	var nbsp = games_getNBSP();
+	var white, black;
+	var colorArray = games_chess_getColors();
+	white = colorArray[0];
+	black = colorArray[1];
+	var status = document.getElementById("games_chess_status");
+	status.innerHTML = "White's turn";
+	var turn = document.getElementById("games_chess_turn");
+	var mode = document.getElementById("games_chess_mode");
+	var positionSelectedStorage = document.getElementById("games_chess_positionSelectedStorage");
+	var gameOver = document.getElementById("games_chess_gameOver");
+
+	// for en passant - see Wikipedia "chess" entry
+	var lastPiece = document.getElementById("games_chess_lastPiece");
+	var lastPieceStart = document.getElementById("games_chess_lastPieceStart");
+	var lastPieceEnd = document.getElementById("games_chess_lastPieceEnd");
+
+	// for castling - see Wikipedia "chess" entry
+	var whiteR1Moved = document.getElementById("games_chess_whiteR1Moved");
+	var whiteR2Moved = document.getElementById("games_chess_whiteR2Moved");
+	var whiteKMoved = document.getElementById("games_chess_whiteKMoved");
+	var blackR1Moved = document.getElementById("games_chess_blackR1Moved");
+	var blackR2Moved = document.getElementById("games_chess_blackR2Moved");
+	var blackKMoved = document.getElementById("games_chess_blackKMoved");
+
+	var grid = games_chess_setup_board("");
+	mode.value = "startTurn";
+	turn.value = white;
+	positionSelectedStorage.value = "";
+	gameOver.value = 0;
+
+	// for en passant - see Wikipedia "chess" entry
+	lastPiece.value = "";
+	lastPieceStart.value = "";
+	lastPieceEnd.value = "";
+
+	// for castling - see Wikipedia "chess" entry
+	whiteR1Moved.value = "0";
+	whiteR2Moved.value = "0";
+	whiteKMoved.value = "0";
+	blackR1Moved.value = "0";
+	blackR2Moved.value = "0";
+	blackKMoved.value = "0";
+
+	grid[0][0].innerHTML = "R";
+	grid[0][0].style.color = "black";
+	grid[1][0].innerHTML = "N";
+	grid[1][0].style.color = "black";
+	grid[2][0].innerHTML = "B";
+	grid[2][0].style.color = "black";
+	grid[3][0].innerHTML = "K";
+	grid[3][0].style.color = "black";
+	grid[4][0].innerHTML = "Q";
+	grid[4][0].style.color = "black";
+	grid[5][0].innerHTML = "B";
+	grid[5][0].style.color = "black";
+	grid[6][0].innerHTML = "N";
+	grid[6][0].style.color = "black";
+	grid[7][0].innerHTML = "R";
+	grid[7][0].style.color = "black";
+	grid[0][1].innerHTML = "P";
+	grid[0][1].style.color = "black";
+	grid[1][1].innerHTML = "P";
+	grid[1][1].style.color = "black";
+	grid[2][1].innerHTML = "P";
+	grid[2][1].style.color = "black";
+	grid[3][1].innerHTML = "P";
+	grid[3][1].style.color = "black";
+	grid[4][1].innerHTML = "P";
+	grid[4][1].style.color = "black";
+	grid[5][1].innerHTML = "P";
+	grid[5][1].style.color = "black";
+	grid[6][1].innerHTML = "P";
+	grid[6][1].style.color = "black";
+	grid[7][1].innerHTML = "P";
+	grid[7][1].style.color = "black";
+
+	var i, j;
+	for( i=0; i<8; i++ )
+	{
+		for( j=2; j<6; j++ )
+		{
+			grid[i][j].innerHTML = "&nbsp;";
+			grid[i][j].style.color = grid[i][j].style.backgroundColor;
+			grid[i][j].className = "";
+		}
+	}
+
+	for( i=0; i<8; i++ )
+	{
+		grid[i][0].className = "";
+		grid[i][1].className = "";
+		grid[i][6].className = "";
+		grid[i][7].className = "";
+	}
+
+	grid[0][7].innerHTML = "R";
+	grid[0][7].style.color = "white";
+	grid[1][7].innerHTML = "N";
+	grid[1][7].style.color = "white";
+	grid[2][7].innerHTML = "B";
+	grid[2][7].style.color = "white";
+	grid[3][7].innerHTML = "K";
+	grid[3][7].style.color = "white";
+	grid[4][7].innerHTML = "Q";
+	grid[4][7].style.color = "white";
+	grid[5][7].innerHTML = "B";
+	grid[5][7].style.color = "white";
+	grid[6][7].innerHTML = "N";
+	grid[6][7].style.color = "white";
+	grid[7][7].innerHTML = "R";
+	grid[7][7].style.color = "white";
+	grid[0][6].innerHTML = "P";
+	grid[0][6].style.color = "white";
+	grid[1][6].innerHTML = "P";
+	grid[1][6].style.color = "white";
+	grid[2][6].innerHTML = "P";
+	grid[2][6].style.color = "white";
+	grid[3][6].innerHTML = "P";
+	grid[3][6].style.color = "white";
+	grid[4][6].innerHTML = "P";
+	grid[4][6].style.color = "white";
+	grid[5][6].innerHTML = "P";
+	grid[5][6].style.color = "white";
+	grid[6][6].innerHTML = "P";
+	grid[6][6].style.color = "white";
+	grid[7][6].innerHTML = "P";
+	grid[7][6].style.color = "white";
+
+
+
+/**********jm***************/
+/*
+// TESTING
+for( i=0; i<8; i++ )
+{
+	for( j=0; j<8; j++ )
+	{
+		grid[i][j].innerHTML = "&nbsp;";
+		grid[i][j].style.color = grid[i][j].style.backgroundColor;
+	}
+}
+
+grid[3][7].innerHTML = "K";
+grid[3][7].style.color = "white";
+grid[3][0].innerHTML = "K";
+grid[3][0].style.color = "black";
+grid[1][6].innerHTML = "N";
+grid[1][6].style.color = "white";
+grid[0][7].innerHTML = "R";
+grid[0][7].style.color = "white";
+grid[7][7].innerHTML = "R";
+grid[7][7].style.color = "white";
+grid[0][0].innerHTML = "R";
+grid[0][0].style.color = "black";
+grid[7][0].innerHTML = "R";
+grid[7][0].style.color = "black";
+grid[7][6].innerHTML = "B";
+grid[7][6].style.color = "black";
+
+grid[5][3].innerHTML = "P";
+grid[5][3].style.color = "white";
+grid[4][1].innerHTML = "P";
+grid[4][1].style.color = "black";
+grid[5][1].innerHTML = "P";
+grid[5][1].style.color = "black";
+grid[6][1].innerHTML = "P";
+grid[6][1].style.color = "black";
+grid[7][1].innerHTML = "P";
+grid[7][1].style.color = "black";
+*/
+}
+
+function games_chess_checkForWinner(grid)
+{
+	var returnVal = false;
+	var nbsp = games_getNBSP();
+	var white, black;
+	var colorArray = games_chess_getColors();
+	white = colorArray[0];
+	black = colorArray[1];
+	var status = document.getElementById("games_chess_status");
+	var whiteKingFound = 0;
+	var blackKingFound = 0;
+
+	var i, j;
+	for(i=0; i<8; i++)
+	{
+	  for( j=0; j<8; j++)
+	  {
+	    if( grid[i][j].innerHTML == "K" && grid[i][j].style.color == white )
+	      { whiteKingFound = 1; }
+	    if( grid[i][j].innerHTML == "K" && grid[i][j].style.color == black )
+	      { blackKingFound = 1; }
+	  }
+	}
+
+
+	if( ! blackKingFound )
+	{
+		status.innerHTML = "<strong>WHITE WINS!</strong>";
+		return true;
+	}
+
+	if( ! whiteKingFound )
+	{
+		status.innerHTML = "<strong>BLACK WINS!</strong>";
+		return true;
+	}
+	return false;
+}
+
+function games_chess_checkForCheck(kingColor, grid)
+{
+	var white, black;
+	var colorArray = games_chess_getColors();
+	white = colorArray[0];
+	black = colorArray[1];
+	var kingRow;
+	var kingCol;
+	var i, j;
+	for(i=0; i<8; i++)
+	{
+		for(j=0; j<8; j++)
+		{
+			if( grid[i][j].innerHTML == "K" && grid[i][j].style.color == kingColor )
+			{
+				kingRow = i;
+				kingCol = j;
+			}
+		}
+	}
+
+	var moveList;
+	var potentialMove;
+	var k;
+	for(i=0; i<8; i++)
+	{
+		for(j=0; j<8; j++)
+		{
+			if((kingColor == black && grid[i][j].style.color == white) ||
+			   (kingColor == white && grid[i][j].style.color == black))
+			{
+				moveList = games_chess_findValidMoves(grid[i][j], grid, false);
+				for(k=0; k<moveList.length; k++)
+				{
+					potentialMove = moveList[k];
+					if( potentialMove[0] == kingRow && potentialMove[1] == kingCol )
+					  { return true; }
+				}
+			}
+		}
+	}
+	return false;
+}
+
+
+function games_chess_checkForCastling(kingColor, whichRook, grid)
+{
+	// none of the involved pieces should have moved beforehand
+	var nbsp = games_getNBSP();
+	var white, black;
+	var colorArray = games_chess_getColors();
+	white = colorArray[0];
+	black = colorArray[1];
+	var kMoved, rMoved;
+
+	if( kingColor == white )
+	{
+		kMoved = document.getElementById("games_chess_whiteKMoved");
+		if( whichRook == "short" )
+		  { rMoved = document.getElementById("games_chess_whiteR1Moved"); }
+		else if( whichRook == "long" )
+		  { rMoved = document.getElementById("games_chess_whiteR2Moved"); }
+	}
+	else if( kingColor == black )
+	{
+		kMoved = document.getElementById("games_chess_blackKMoved");
+		if( whichRook == "short" )
+		  { rMoved = document.getElementById("games_chess_blackR1Moved"); }
+		else if( whichRook == "long" )
+		  { rMoved = document.getElementById("games_chess_blackR2Moved"); }
+	}
+
+	if( kMoved.value == "1" || rMoved.value == "1" )
+	  { return false; }
+
+	var colorSide;
+	if( kingColor == white )
+	  { colorSide = 7; }
+	else if ( kingColor == black )
+	  { colorSide = 0; }
+
+	// no intervening pieces
+	if( whichRook == "short" )
+	{
+		if(grid[1][colorSide].innerHTML != nbsp || grid[2][colorSide].innerHTML != nbsp )
+		  { return false; }
+	}
+	if( whichRook == "long" )
+	{
+		if(grid[4][colorSide].innerHTML != nbsp || grid[5][colorSide].innerHTML != nbsp || grid[6][colorSide].innerHTML != nbsp )
+		  { return false; }
+	}
+
+	// king cannot currently be in check
+ 	if( games_chess_checkForCheck(kingColor, grid) )
+	  { return false; }
+
+	// king cannot cross any space that would put him in check,
+	// including end position.
+	var kingMoves = new Array();
+	if( whichRook == "short" )
+	{
+		kingMoves.push(games_chess_createPosition(1, colorSide));
+		kingMoves.push(games_chess_createPosition(2, colorSide));
+	}
+	if( whichRook == "long" )
+	{
+		kingMoves.push(games_chess_createPosition(4, colorSide));
+		kingMoves.push(games_chess_createPosition(5, colorSide));
+	}
+
+	//Set up the hypothetical board.
+	var modifiedGrid = games_chess_setup_board("dummy");
+
+	var k;
+	for( k=0; k<kingMoves.length; k++)
+	{
+		// 1) set up the hypothetical board for this potential move
+		potentialElRow = kingMoves[k][0];
+		potentialElCol = kingMoves[k][1];
+		for( i=0; i<8; i++ )
+		{
+			for( j=0; j<8; j++ )
+			{
+				modifiedGrid[i][j].innerHTML = grid[i][j].innerHTML;
+				modifiedGrid[i][j].style.color = grid[i][j].style.color;
+				modifiedGrid.className = "";
+			}
+		}
+
+		// 2)make the potential move on the copied board
+		// (do not need to worry about "en passant" (yay!))
+		modifiedGrid[potentialElRow][potentialElCol].innerHTML = "K";
+		modifiedGrid[potentialElRow][potentialElCol].style.color = kingColor;
+		modifiedGrid[3][potentialElCol].innerHTML = "&nbsp;";
+		modifiedGrid[3][potentialElCol].style.color = modifiedGrid[3][potentialElCol].style.backgroundColor;
+
+		// 3) check to see if this potential move would put our king in check
+		if( games_chess_checkForCheck(kingColor, modifiedGrid) )
+		  { return false; }
+	}
+
+
+	// king cannot castle with a promoted pawn
+	// (inherently covered, do nothing)
+
+	// OK, I guess it is safe to castle...
+	return true;
+}
+
+function games_chess_createPosition(row, col)
+{
+	var temp = new Array();
+	temp.push(row);
+	temp.push(col);
+	return temp;
+}
+
+// finds all valid moves for the piece on the <el> position of board <grid>.
+// checkForCastle is a boolean that will determine if we should bother
+// checking to see if a Castle move is valid for this piece.
+function games_chess_findValidMoves(el, grid, checkForCastle)
+{
+	var white, black;
+	var colorArray = games_chess_getColors();
+	white = colorArray[0];
+	black = colorArray[1];
+	var turn = el.style.color;
+	var elRow = parseInt(el.id.substr(el.id.length-3,1));
+	var elCol = parseInt(el.id.substr(el.id.length-1,1));
+	var returnVals = new Array();
+
+	// Pawn
+	if( el.innerHTML == "P" )
+	{
+		// for en passant - see Wikipedia "chess" entry
+		var lastPiece = document.getElementById("games_chess_lastPiece");
+		var lastPieceStart = document.getElementById("games_chess_lastPieceStart");
+		var lastPieceStartRow = parseInt(lastPieceStart.value.substr(lastPieceStart.value.length-3,1));
+		var lastPieceStartCol = parseInt(lastPieceStart.value.substr(lastPieceStart.value.length-1,1));
+		var lastPieceEnd = document.getElementById("games_chess_lastPieceEnd");
+		var lastPieceEndRow = parseInt(lastPieceEnd.value.substr(lastPieceEnd.value.length-3,1));
+		var lastPieceEndCol = parseInt(lastPieceEnd.value.substr(lastPieceEnd.value.length-1,1));
+
+		if( turn == white )
+		{
+			// basic move
+			if( elCol != 0 && grid[elRow][elCol-1].style.color != white && grid[elRow][elCol-1].style.color != black )
+			  { returnVals.push(games_chess_createPosition(elRow, elCol-1)); }
+
+			// optional first move
+			if( elCol == 6 &&
+				grid[elRow][5].style.color != white && grid[elRow][5].style.color != black &&
+				grid[elRow][4].style.color != white && grid[elRow][4].style.color != black )
+			  { returnVals.push(games_chess_createPosition(elRow, 4)); }
+
+			// basic attack
+			if( elCol != 0 && elRow != 0 && grid[elRow-1][elCol-1].style.color == black )
+			  { returnVals.push(games_chess_createPosition(elRow-1, elCol-1)); }
+			if( elCol != 0 && elRow != 7 && grid[elRow+1][elCol-1].style.color == black )
+			  { returnVals.push(games_chess_createPosition(elRow+1, elCol-1)); }
+
+			// en passant
+			if( elCol == 3 && elRow != 0 && lastPiece.value == "P" &&
+				(elRow-1)==lastPieceStartRow && lastPieceStartCol == 1 && lastPieceEndCol == 3)
+			  { returnVals.push(games_chess_createPosition(elRow-1, 2)); }
+			if( elCol == 3 && elRow != 7 && lastPiece.value == "P" &&
+				(elRow+1)==lastPieceStartRow && lastPieceStartCol == 1 && lastPieceEndCol == 3)
+			  { returnVals.push(games_chess_createPosition(elRow+1, 2)); }
+		}
+		else if( turn == black )
+		{
+			// basic move
+			if( elCol != 7 && grid[elRow][elCol+1].style.color != white && grid[elRow][elCol+1].style.color != black )
+			  { returnVals.push(games_chess_createPosition(elRow, elCol+1)); }
+
+			// optional first move
+			if( elCol == 1 &&
+				grid[elRow][3].style.color != white && grid[elRow][3].style.color != black &&
+				grid[elRow][2].style.color != white && grid[elRow][2].style.color != black )
+			  { returnVals.push(games_chess_createPosition(elRow, 3)); }
+
+			// basic attack
+			if( elCol != 7 && elRow != 0 && grid[elRow-1][elCol+1].style.color == white )
+			  { returnVals.push(games_chess_createPosition(elRow-1, elCol+1)); }
+			if( elCol != 7 && elRow != 7 && grid[elRow+1][elCol+1].style.color == white )
+			  { returnVals.push(games_chess_createPosition(elRow+1, elCol+1)); }
+
+			// en passant
+			if( elCol == 4 && elRow != 0 && lastPiece.value == "P" &&
+				(elRow-1)==lastPieceStartRow && lastPieceStartCol == 6 && lastPieceEndCol == 4)
+			  { returnVals.push(games_chess_createPosition(elRow-1, 5)); }
+			if( elCol == 4 && elRow != 7 && lastPiece.value == "P" &&
+				(elRow+1)==lastPieceStartRow && lastPieceStartCol == 6 && lastPieceEndCol == 4)
+			  { returnVals.push(games_chess_createPosition(elRow+1, 5)); }
+		}
+	}
+
+	// Rook
+	if( el.innerHTML == "R" )
+	{
+		// find all valid up moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow--;
+			if( possibleRow < 0 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+					  (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid right moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleCol++;
+			if( possibleCol > 7 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+					  (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid down moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow++;
+			if( possibleRow > 7 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+					  (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid left moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleCol--;
+			if( possibleCol < 0 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+					  (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+
+		// Castling?
+		if( checkForCastle )
+		{
+			var colorSide;
+			if( turn == white )
+			  { colorSide = 7; }
+			if( turn == black )
+			  { colorSide = 0; }
+
+			if( grid[3][colorSide].innerHTML == "K" && grid[3][colorSide].style.color == turn )
+			{
+				var castleType;
+				if( elRow == 0 && elCol == colorSide )
+				  { castleType = "short"; }
+				if( elRow == 7 && elCol == colorSide )
+				  { castleType = "long"; }
+				if( castleType == "long" || castleType == "short" )
+				{
+					if(games_chess_checkForCastling(turn, castleType, grid))
+					  { returnVals.push(games_chess_createPosition(3,colorSide)); }
+				}
+			}
+		}
+	}
+
+	// Knight
+	if( el.innerHTML == "N" )
+	{
+		if( (elRow-2) >= 0 && (elCol-1) >= 0 && turn != grid[elRow-2][elCol-1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow-2, elCol-1)); }
+
+		if( (elRow-2) >= 0 && (elCol+1) <= 7 && turn != grid[elRow-2][elCol+1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow-2, elCol+1)); }
+
+		if( (elRow-1) >= 0 && (elCol-2) >= 0 && turn != grid[elRow-1][elCol-2].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow-1, elCol-2)); }
+
+		if( (elRow-1) >= 0 && (elCol+2) <= 7 && turn != grid[elRow-1][elCol+2].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow-1, elCol+2)); }
+
+		if( (elRow+1) <= 7 && (elCol-2) >= 0 && turn != grid[elRow+1][elCol-2].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+1, elCol-2)); }
+
+		if( (elRow+1) <= 7 && (elCol+2) <= 7 && turn != grid[elRow+1][elCol+2].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+1, elCol+2)); }
+
+		if( (elRow+2) <= 7 && (elCol-1) >= 0 && turn != grid[elRow+2][elCol-1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+2, elCol-1)); }
+
+		if( (elRow+2) <= 7 && (elCol+1) <= 7 && turn != grid[elRow+2][elCol+1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+2, elCol+1)); }
+	}
+
+	// Bishop
+	if( el.innerHTML == "B" )
+	{
+		// find all valid up/left moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow--;
+			possibleCol--;
+			if( possibleRow < 0 || possibleCol < 0 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+			          (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid up/right moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow--;
+			possibleCol++;
+			if( possibleRow < 0 || possibleCol > 7 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+			          (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid down/left moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow++;
+			possibleCol--;
+			if( possibleRow > 7 || possibleCol < 0 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+			          (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid down/right moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow++;
+			possibleCol++;
+			if( possibleRow > 7 || possibleCol > 7 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+			          (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+	}
+
+	// Queen
+	if( el.innerHTML == "Q" )
+	{
+		// find all valid up moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow--;
+			if( possibleRow < 0 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+					  (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid right moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleCol++;
+			if( possibleCol > 7 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+					  (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid down moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow++;
+			if( possibleRow > 7 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+					  (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid left moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleCol--;
+			if( possibleCol < 0 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+					  (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+
+		// find all valid up/left moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow--;
+			possibleCol--;
+			if( possibleRow < 0 || possibleCol < 0 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+			          (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid up/right moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow--;
+			possibleCol++;
+			if( possibleRow < 0 || possibleCol > 7 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+			          (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid down/left moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow++;
+			possibleCol--;
+			if( possibleRow > 7 || possibleCol < 0 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+			          (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+		// find all valid down/right moves
+		possibleRow = elRow;
+		possibleCol = elCol;
+		while(true)
+		{
+			possibleRow++;
+			possibleCol++;
+			if( possibleRow > 7 || possibleCol > 7 )
+			  { break; }
+			if( grid[possibleRow][possibleCol].style.color == turn )
+			  { break; }
+			else if ( (grid[possibleRow][possibleCol].style.color == white && turn == black) ||
+			          (grid[possibleRow][possibleCol].style.color == black && turn == white) )
+			{
+				returnVals.push(games_chess_createPosition(possibleRow, possibleCol));
+				break;
+			}
+			else
+			  { returnVals.push(games_chess_createPosition(possibleRow, possibleCol)); }
+		}
+	}
+
+	// King
+	if( el.innerHTML == "K" )
+	{
+		if( (elRow-1) >= 0 && (elCol-1) >= 0 && turn != grid[elRow-1][elCol-1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow-1, elCol-1)); }
+
+		if( (elRow-1) >= 0 && (elCol+0) <= 7 && turn != grid[elRow-1][elCol+0].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow-1, elCol+0)); }
+
+		if( (elRow-1) >= 0 && (elCol+1) <= 7 && turn != grid[elRow-1][elCol+1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow-1, elCol+1)); }
+
+		if( (elRow+0) >= 0 && (elCol-1) >= 0 && turn != grid[elRow+0][elCol-1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+0, elCol-1)); }
+
+		if( (elRow+0) <= 7 && (elCol+1) <= 7 && turn != grid[elRow+0][elCol+1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+0, elCol+1)); }
+
+		if( (elRow+1) <= 7 && (elCol-1) >= 0 && turn != grid[elRow+1][elCol-1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+1, elCol-1)); }
+
+		if( (elRow+1) <= 7 && (elCol+0) >= 0 && turn != grid[elRow+1][elCol+0].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+1, elCol+0)); }
+
+		if( (elRow+1) <= 7 && (elCol+1) <= 7 && turn != grid[elRow+1][elCol+1].style.color )
+		  { returnVals.push(games_chess_createPosition(elRow+1, elCol+1)); }
+
+		// Castling?
+		if( checkForCastle )
+		{
+			var colorSide;
+			if( turn == white )
+			  { colorSide = 7; }
+			if( turn == black )
+			  { colorSide = 0; }
+
+			if( elRow == 3 && elCol == colorSide )
+			{
+				// check top rook
+				if( grid[0][colorSide].innerHTML == "R" && grid[0][colorSide].style.color == turn )
+				{
+					if(games_chess_checkForCastling(turn, "short", grid))
+					  { returnVals.push(games_chess_createPosition(0,colorSide)); }
+				}
+
+				// check bottom rook
+				if( grid[7][colorSide].innerHTML == "R" && grid[7][colorSide].style.color == turn )
+				{
+					if(games_chess_checkForCastling(turn, "long", grid))
+					  { returnVals.push(games_chess_createPosition(7,colorSide)); }
+				}
+			}
+		}
+	}
+	return returnVals;
+}
+
+
+function games_chess_cellClicked(el)
+{
+	var nbsp = games_getNBSP();
+	var white, black;
+	var colorArray = games_chess_getColors();
+	white = colorArray[0];
+	black = colorArray[1];
+
+	var status = document.getElementById("games_chess_status");
+	var turn = document.getElementById("games_chess_turn");
+	var mode = document.getElementById("games_chess_mode");
+	var positionSelectedStorage = document.getElementById("games_chess_positionSelectedStorage");
+	if( mode.value == "pieceSelected" )
+	  { var positionSelected = document.getElementById(positionSelectedStorage.value); }
+	var gameOver = document.getElementById("games_chess_gameOver");
+
+	// the last piece that was moved (of any color)
+	// for en passant - see Wikipedia "chess" entry
+	var lastPiece = document.getElementById("games_chess_lastPiece");
+	var lastPieceStart = document.getElementById("games_chess_lastPieceStart");
+	var lastPieceEnd = document.getElementById("games_chess_lastPieceEnd");
+	var grid = games_chess_setup_board("");
+
+
+	// bail under certain conditions...
+	if( gameOver.value == 1 )
+	{
+		return;
+	}
+	// must select a piece of your own color to start a turn
+	else if ( mode.value == "startTurn" && el.style.color != turn.value )
+	{
+		return;
+	}
+	// cannot take one of your own pieces, unless cancelling your move
+	else if ( mode.value == "pieceSelected" && el.style.color == turn.value && el.id != positionSelected.id )
+	{
+		// another exception is castling
+		if( el.innerHTML == "K" && positionSelected.innerHTML == "R" && positionSelected.style.color == turn.value )
+		  {}
+		else if( el.innerHTML == "R" && positionSelected.innerHTML == "K" && positionSelected.style.color == turn.value )
+		  {}
+		else
+		  { return; }
+	}
+
+	if( mode.value == "startTurn" )
+	{
+		// create the hypothetical board for potential moves
+		var modifiedGrid = games_chess_setup_board("dummy");
+		var potentialElRow;
+		var potentialElCol;
+		var elRow = parseInt(el.id.substr(el.id.length-3,1));
+		var elCol = parseInt(el.id.substr(el.id.length-1,1));
+
+
+		var validMoves = games_chess_findValidMoves(el, grid, true);
+		if( validMoves.length == 0 )
+		  { return; }
+
+		// make sure none of these moves will compromise your king
+		var i, j, k;
+		for( k=0; k<validMoves.length; k++ )
+		{
+			potentialElRow = validMoves[k][0];
+			potentialElCol = validMoves[k][1];
+
+			// 0) if this validMove is a castling move, then skip this
+			// iteration - findValidMoves()/checkForCastle() inherently
+			// runs checkForCheck().
+			if( turn.value == white )
+			{
+				if( el.innerHTML == "K" && elRow == 3 && elCol == 7 && (potentialElRow == 0 || potentialElRow == 7) && potentialElCol == 7 )
+				  { continue; }
+				if( el.innerHTML == "R" && grid[3][7].innerHTML == "K" && (elRow == 0 || elRow == 7) && elCol == 7 && potentialElRow == 3 && potentialElCol == 7 )
+				  { continue; }
+			}
+			if( turn.value == black )
+			{
+				if( el.innerHTML == "K" && elRow == 3 && elCol == 0 && (potentialElRow == 0 || potentialElRow == 7) && potentialElCol == 0 )
+				  { continue; }
+				if( el.innerHTML == "R" && grid[3][0].innerHTML == "K" && (elRow == 0 || elRow == 7) && elCol == 0 && potentialElRow == 3 && potentialElCol == 0 )
+				  { continue; }
+			}
+
+			// 1) set up the hypothetical board for this potential move
+			for( i=0; i<8; i++ )
+			{
+				for( j=0; j<8; j++ )
+				{
+					modifiedGrid[i][j].innerHTML = grid[i][j].innerHTML;
+					modifiedGrid[i][j].style.color = grid[i][j].style.color;
+					modifiedGrid.className = "";
+				}
+			}
+
+			// 2)make the potential move on the copied board
+			// 2a) if the piece being moved is a pawn, check to see if we are
+			// doing an "en passant".  If so, passively kill the speedy pawn.
+			// NOTE: this is coded from a different perspective from the
+			// other "en passant" code check (from the pieceSelected mode).
+			// In the section here elRow is where our potential piece starts, and
+			// potentialElRow is where the piece will end up.
+			// In the section below elRow is where the piece will end up, and
+			// positionSelected is where the piece started the turn at.
+			if( el.innerHTML == "P" && lastPiece.value == "P" )
+			{
+				var lastPieceStartRow = parseInt(lastPieceStart.value.substr(lastPieceStart.value.length-3,1));
+				var lastPieceStartCol = parseInt(lastPieceStart.value.substr(lastPieceStart.value.length-1,1));
+				var lastPieceEndRow = parseInt(lastPieceEnd.value.substr(lastPieceEnd.value.length-3,1));
+				var lastPieceEndCol = parseInt(lastPieceEnd.value.substr(lastPieceEnd.value.length-1,1));
+				if( el.style.color == white )
+				{
+					if( elCol == 3 && elRow != 0 &&	(elRow-1)==lastPieceStartRow &&
+						lastPieceStartCol == 1 && lastPieceEndCol == 3 &&
+						potentialElRow == lastPieceStartRow && potentialElCol == 2 )
+					{
+						modifiedGrid[lastPieceEndRow][lastPieceEndCol].innerHTML = "&nbsp;";
+						modifiedGrid[lastPieceEndRow][lastPieceEndCol].style.color = modifiedGrid[lastPieceEndRow][lastPieceEndCol].style.backgroundColor;
+					}
+					if( elCol == 3 && elRow != 7 &&	(elRow+1)==lastPieceStartRow &&
+						lastPieceStartCol == 1 && lastPieceEndCol == 3 &&
+						potentialElRow == lastPieceStartRow && potentialElCol == 2 )
+					{
+						modifiedGrid[lastPieceEndRow][lastPieceEndCol].innerHTML = "&nbsp;";
+						modifiedGrid[lastPieceEndRow][lastPieceEndCol].style.color = modifiedGrid[lastPieceEndRow][lastPieceEndCol].style.backgroundColor;
+					}
+				}
+				else if( el.style.color == black )
+				{
+					if( elCol == 4 && elRow != 0 && (elRow-1)==lastPieceStartRow &&
+						lastPieceStartCol == 6 && lastPieceEndCol == 4 &&
+						potentialElRow == lastPieceStartRow && potentialElCol == 5 )
+					{
+						modifiedGrid[lastPieceEndRow][lastPieceEndCol].innerHTML = "&nbsp;";
+						modifiedGrid[lastPieceEndRow][lastPieceEndCol].style.color = modifiedGrid[lastPieceEndRow][lastPieceEndCol].style.backgroundColor;
+					}
+					if( elCol == 4 && elRow != 7 && (elRow+1)==lastPieceStartRow &&
+						lastPieceStartCol == 6 && lastPieceEndCol == 4 &&
+						potentialElRow == lastPieceStartRow && potentialElCol == 5 )
+					{
+						modifiedGrid[lastPieceEndRow][lastPieceEndCol].innerHTML = "&nbsp;";
+						modifiedGrid[lastPieceEndRow][lastPieceEndCol].style.color = modifiedGrid[lastPieceEndRow][lastPieceEndCol].style.backgroundColor;
+					}
+				}
+			}
+
+
+			// 2b) make the potential move on the hypothetical board
+			modifiedGrid[potentialElRow][potentialElCol].innerHTML = el.innerHTML;
+			modifiedGrid[potentialElRow][potentialElCol].style.color = el.style.color;
+			modifiedGrid[elRow][elCol].innerHTML = "&nbsp;";
+			modifiedGrid[elRow][elCol].style.color = modifiedGrid[elRow][elCol].style.backgroundColor;
+
+			// 2c) (note) In theory, we should forge the lastPiece data, but
+			// it is only used by findValidMoves for "en passant" checks.
+			// This lack of forging causes games_chess_checkForCheck to possibly
+			// count extra valid moves for pawns on rare occasions, but in each
+			// case these extra valid moves do not have any bearing on avenues
+			// of attack on the King, so we do not have to worry.
+
+			// 3) check to see if this potential move would put our king in check
+			if( games_chess_checkForCheck(turn.value, modifiedGrid) )
+			{
+				validMoves.splice(k,1);
+				k--;
+			}
+		}  // end for()
+
+
+		// now that we are done finding valid moves, display them to the user
+		if( validMoves.length == 0 )
+		  { return; }
+
+		// loop through each row/col pair returned by function
+		var row;
+		var col;
+		var i;
+		for(i=0; i<validMoves.length; i++)
+		{
+			row = validMoves[i][0];
+			col = validMoves[i][1];
+			grid[row][col].className = "games_chess_cell_div_potential_move";
+		}
+		positionSelectedStorage.value = el.id;
+		el.className = "games_chess_cell_div_selected";
+		mode.value = "pieceSelected";
+	}
+	else if( mode.value == "pieceSelected" )
+	{
+		// check if the move was cancelled
+		if( el.id == positionSelected.id && el.style.color == turn.value )
+		{
+			// start turn over
+			var i, j;
+			for( i=0; i<8; i++ )
+			{
+				for( j=0; j<8; j++ )
+				{
+					// clear the mid-turn highlights
+					grid[i][j].className = "";
+				}
+			}
+			positionSelectedStorage.value = "";
+			mode.value = "startTurn";
+			return;
+		}
+		// make sure the position clicked is a valid destination
+		if( el.className != "games_chess_cell_div_potential_move" )
+		  { return; }
+
+
+		// if the piece being moved is a pawn, check to see if we are
+		// doing an "en passant".  If so, passively kill the speedy pawn
+		// NOTE: this is coded from a different perspective from the
+		// other "en passant" code check (from the startTurn mode).
+		// In the section above elRow is where our potential piece starts, and
+		// potentialElRow is where the piece will end up.
+		// In the section here elRow is where the piece will end up, and
+		// positionSelected is where the piece started the turn at.
+		if( positionSelected.innerHTML == "P" && lastPiece.value == "P" )
+		{
+			var elRow = parseInt(el.id.substr(el.id.length-3,1));
+			var elCol = parseInt(el.id.substr(el.id.length-1,1));
+			var positionSelectedRow = parseInt(positionSelected.id.substr(positionSelected.id.length-3,1));
+			var positionSelectedCol = parseInt(positionSelected.id.substr(positionSelected.id.length-1,1));
+			var lastPieceStartRow = parseInt(lastPieceStart.value.substr(lastPieceStart.value.length-3,1));
+			var lastPieceStartCol = parseInt(lastPieceStart.value.substr(lastPieceStart.value.length-1,1));
+			var lastPieceEndRow = parseInt(lastPieceEnd.value.substr(lastPieceEnd.value.length-3,1));
+			var lastPieceEndCol = parseInt(lastPieceEnd.value.substr(lastPieceEnd.value.length-1,1));
+			if( positionSelected.style.color == white )
+			{
+				if( positionSelectedCol == 3 && positionSelectedRow != 0 &&
+					(positionSelectedRow-1)==lastPieceStartRow &&
+					lastPieceStartCol == 1 && lastPieceEndCol == 3 &&
+					elRow == lastPieceStartRow && elCol == 2 )
+				{
+					grid[lastPieceEndRow][lastPieceEndCol].innerHTML = "&nbsp;";
+					grid[lastPieceEndRow][lastPieceEndCol].style.color = grid[lastPieceEndRow][lastPieceEndCol].style.backgroundColor;
+				}
+				if( positionSelectedCol == 3 && positionSelectedRow != 7 &&
+					(positionSelectedRow+1)==lastPieceStartRow &&
+					lastPieceStartCol == 1 && lastPieceEndCol == 3 &&
+					elRow == lastPieceStartRow && elCol == 2 )
+				{
+					grid[lastPieceEndRow][lastPieceEndCol].innerHTML = "&nbsp;";
+					grid[lastPieceEndRow][lastPieceEndCol].style.color = grid[lastPieceEndRow][lastPieceEndCol].style.backgroundColor;
+				}
+			}
+			else if( positionSelected.style.color == black )
+			{
+				if( positionSelectedCol == 4 && positionSelectedRow != 0 &&
+					(positionSelectedRow-1)==lastPieceStartRow &&
+					lastPieceStartCol == 6 && lastPieceEndCol == 4 &&
+					elRow == lastPieceStartRow && elCol == 5 )
+				{
+					grid[lastPieceEndRow][lastPieceEndCol].innerHTML = "&nbsp;";
+					grid[lastPieceEndRow][lastPieceEndCol].style.color = grid[lastPieceEndRow][lastPieceEndCol].style.backgroundColor;
+				}
+				if( positionSelectedCol == 4 && positionSelectedRow != 7 &&
+					(positionSelectedRow+1)==lastPieceStartRow &&
+					lastPieceStartCol == 6 && lastPieceEndCol == 4 &&
+					elRow == lastPieceStartRow && elCol == 5 )
+				{
+					grid[lastPieceEndRow][lastPieceEndCol].innerHTML = "&nbsp;";
+					grid[lastPieceEndRow][lastPieceEndCol].style.color = grid[lastPieceEndRow][lastPieceEndCol].style.backgroundColor;
+				}
+			}
+		}
+
+
+		// if anything moves onto or off of these spots, that means that
+		// the the original piece has been been moved (or killed, which is
+		// just as good for determining if a castle is allowed with
+		// this piece).
+		if( el.id == "games_chess_r3c0" || positionSelected.id == "games_chess_r3c0" )
+		{
+			kMoved = document.getElementById("games_chess_blackKMoved");
+			kMoved.value = "1";
+		}
+		if( el.id == "games_chess_r0c0" || positionSelected.id == "games_chess_r0c0" )
+		{
+			r1Moved = document.getElementById("games_chess_blackR1Moved");
+			r1Moved.value = "1";
+		}
+		if( el.id == "games_chess_r7c0" || positionSelected.id == "games_chess_r7c0" )
+		{
+			r2Moved = document.getElementById("games_chess_blackR2Moved");
+			r2Moved.value = "1";
+		}
+		if( el.id == "games_chess_r3c7" || positionSelected.id == "games_chess_r3c7" )
+		{
+			kMoved = document.getElementById("games_chess_whiteKMoved");
+			kMoved.value = "1";
+		}
+		if( el.id == "games_chess_r0c7" || positionSelected.id == "games_chess_r0c7" )
+		{
+			r1Moved = document.getElementById("games_chess_whiteR1Moved");
+			r1Moved.value = "1";
+		}
+		if( el.id == "games_chess_r7c7" || positionSelected.id == "games_chess_r7c7" )
+		{
+			r2Moved = document.getElementById("games_chess_whiteR2Moved");
+			r2Moved.value = "1";
+		}
+
+
+		// check to see if this move is a castle
+		var castleBlackR1 = false;
+		var castleBlackR2 = false;
+		var castleWhiteR1 = false;
+		var castleWhiteR2 = false;
+		if( el.style.color == turn.value && el.style.color == positionSelected.style.color )
+		{
+			if( turn.value == black )
+			{
+				if( el.id == "games_chess_r3c0" && positionSelected.id == "games_chess_r0c0" )
+				  { castleBlackR1 = true; }
+				if( el.id == "games_chess_r0c0" && positionSelected.id == "games_chess_r3c0" )
+				  { castleBlackR1 = true; }
+
+				if( el.id == "games_chess_r3c0" && positionSelected.id == "games_chess_r7c0" )
+				  { castleBlackR2 = true; }
+				if( el.id == "games_chess_r7c0" && positionSelected.id == "games_chess_r3c0" )
+				  { castleBlackR2 = true; }
+			}
+			else if( turn.value == white )
+			{
+				if( el.id == "games_chess_r3c7" && positionSelected.id == "games_chess_r0c7" )
+				  { castleWhiteR1 = true; }
+				if( el.id == "games_chess_r0c7" && positionSelected.id == "games_chess_r3c7" )
+				  { castleWhiteR1 = true; }
+
+				if( el.id == "games_chess_r3c7" && positionSelected.id == "games_chess_r7c7" )
+				  { castleWhiteR2 = true; }
+				if( el.id == "games_chess_r7c7" && positionSelected.id == "games_chess_r3c7" )
+				  { castleWhiteR2 = true; }
+			}
+		}
+
+		// actually move the piece(s)
+		if( castleBlackR1 )
+		{
+			lastPiece.value = "K";
+			lastPieceStart.value = "games_chess_r3c0";
+			lastPieceEnd.value = "games_chess_r1c0";
+			grid[1][0].innerHTML = "K";
+			grid[1][0].style.color = "black";
+			grid[2][0].innerHTML = "R";
+			grid[2][0].style.color = "black";
+			grid[0][0].innerHTML = "&nbsp;";
+			grid[0][0].style.color = grid[0][0].style.backgroundColor;
+			grid[3][0].innerHTML = "&nbsp;";
+			grid[3][0].style.color = grid[3][0].style.backgroundColor;
+			positionSelectedStorage.value = "";
+		}
+		else if( castleBlackR2 )
+		{
+			lastPiece.value = "K";
+			lastPieceStart.value = "games_chess_r3c0";
+			lastPieceEnd.value = "games_chess_r1c0";
+			grid[5][0].innerHTML = "K";
+			grid[5][0].style.color = "black";
+			grid[4][0].innerHTML = "R";
+			grid[4][0].style.color = "black";
+			grid[7][0].innerHTML = "&nbsp;";
+			grid[7][0].style.color = grid[0][0].style.backgroundColor;
+			grid[3][0].innerHTML = "&nbsp;";
+			grid[3][0].style.color = grid[3][0].style.backgroundColor;
+			positionSelectedStorage.value = "";
+		}
+		else if( castleWhiteR1 )
+		{
+			lastPiece.value = "K";
+			lastPieceStart.value = "games_chess_r3c7";
+			lastPieceEnd.value = "games_chess_r1c7";
+			grid[1][7].innerHTML = "K";
+			grid[1][7].style.color = "white";
+			grid[2][7].innerHTML = "R";
+			grid[2][7].style.color = "white";
+			grid[0][7].innerHTML = "&nbsp;";
+			grid[0][7].style.color = grid[0][7].style.backgroundColor;
+			grid[3][7].innerHTML = "&nbsp;";
+			grid[3][7].style.color = grid[3][7].style.backgroundColor;
+			positionSelectedStorage.value = "";
+		}
+		else if( castleWhiteR2 )
+		{
+			lastPiece.value = "K";
+			lastPieceStart.value = "games_chess_r3c7";
+			lastPieceEnd.value = "games_chess_r1c7";
+			grid[5][7].innerHTML = "K";
+			grid[5][7].style.color = "white";
+			grid[4][7].innerHTML = "R";
+			grid[4][7].style.color = "white";
+			grid[7][7].innerHTML = "&nbsp;";
+			grid[7][7].style.color = grid[0][7].style.backgroundColor;
+			grid[3][7].innerHTML = "&nbsp;";
+			grid[3][7].style.color = grid[3][7].style.backgroundColor;
+			positionSelectedStorage.value = "";
+		}
+		else
+		{
+			// normal move
+			lastPiece.value = positionSelected.innerHTML;
+			lastPieceStart.value = positionSelected.id;
+			lastPieceEnd.value = el.id;
+			el.innerHTML = positionSelected.innerHTML;
+			el.style.color = positionSelected.style.color;
+			positionSelected.innerHTML = "&nbsp;";
+			positionSelected.style.color = positionSelected.style.backgroundColor;
+			positionSelectedStorage.value = "";
+		}
+
+		mode.value = "startTurn";
+		if( turn.value == white )
+		{
+			status.innerHTML = "Black's turn";
+			turn.value = black;
+		}
+		else
+		{
+			status.innerHTML = "White's turn";
+			turn.value = white;
+		}
+
+		if( castleWhiteR1 || castleWhiteR2 || castleBlackR1 || castleBlackR2 )
+		  { status.innerHTML = status.innerHTML + "<br/>Castle!"; }
+
+
+		// if a pawn has moved all the way across the board,
+		// convert to another piece - default to Queen for now.
+		// Someone might want to promote to a knight, but I
+		// simply cannot think of a good way to provide
+		// an interface for that...
+		var i, j;
+		for( i=0; i<8; i++ )
+		{
+			if( grid[i][0].innerHTML == "P" && grid[i][0].style.color == white )
+			{
+				grid[i][0].innerHTML = "Q";
+				status.innerHTML = status.innerHTML + "<br/>Pawn Promotion!";
+			}
+			if( grid[i][7].innerHTML == "P" && grid[i][7].style.color == black )
+			{
+				grid[i][7].innerHTML = "Q";
+				status.innerHTML = status.innerHTML + "<br/>Pawn Promotion!";
+			}
+		}
+
+
+		// clean up
+		var i, j;
+		for( i=0; i<8; i++ )
+		{
+			for( j=0; j<8; j++ )
+			{
+				// clear the mid-turn highlights
+				grid[i][j].className = "";
+			}
+		}
+
+		if( games_chess_checkForCheck(turn.value, grid) )
+		{
+			status.innerHTML += "<br/><strong>CHECK</strong>";
+		}
+
+		if( games_chess_checkForWinner(grid) )
+		{
+			gameOver.value = 1;
+		}
+	}
+/*
+var debug = "";
+var i, j;
+for(i=0; i<8; i++)
+{
+  for( j=0; j<8; j++)
+  {
+    if( grid[i][j].innerHTML != nbsp )
+      { debug += grid[i][j].innerHTML; }
+	else
+	  { debug += "*"; }
+  }
+  debug += "\n";
+}
+alert(debug);
+*/
+}
+function games_chess_r0c0Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r0c1Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r0c2Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r0c3Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r0c4Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r0c5Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r0c6Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r0c7Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r1c0Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r1c1Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r1c2Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r1c3Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r1c4Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r1c5Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r1c6Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r1c7Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r2c0Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r2c1Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r2c2Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r2c3Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r2c4Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r2c5Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r2c6Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r2c7Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r3c0Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r3c1Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r3c2Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r3c3Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r3c4Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r3c5Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r3c6Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r3c7Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r4c0Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r4c1Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r4c2Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r4c3Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r4c4Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r4c5Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r4c6Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r4c7Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r5c0Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r5c1Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r5c2Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r5c3Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r5c4Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r5c5Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r5c6Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r5c7Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r6c0Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r6c1Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r6c2Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r6c3Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r6c4Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r6c5Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r6c6Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r6c7Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r7c0Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r7c1Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r7c2Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r7c3Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r7c4Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r7c5Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r7c6Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+function games_chess_r7c7Clicked(el)
+{
+	games_chess_cellClicked(el);
+}
+
+
+
+
+window.onload = function ()
+{
+	// set up IE hover
+	parseStylesheets();
+
+	// prep chess game
+	games_chess_reset();
+
+	// final display prep
+	menuSummaryClicked();
+}
+//]]>
+</script>
+</head>
+
+<body>
+<table style='width: 100%;'>
+<tr>
+<td id='dummy'>
+</td>
+<td id='header'>
+<h1>John E. Medema III</h1>
+<br/>
+<br/>
+222 W. Clarendon Ave, Apt 218<br/>
+Phoenix, AZ 85013<br/>
+708-856-4426<br/>
+jmedema@gmail.com<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td id='navbar' style='border-top: 3px; border-right: 0; border-bottom: 0; border-left: 0; border-style: solid; border-color: #CC0000;'>
+<ul class='navbar'>
+<li class="navbarHeader">Sections</li>
+<li class="navbarEntry" id="menuSummary" onclick='menuSummaryClicked()'>Summary</li>
+<li class="navbarEntry" id="menuEmploymentHistory" onclick='menuEmploymentHistoryClicked()'>Employment History</li>
+<li class="navbarEntry" id="menuSkills" onclick='menuSkillsClicked()'>Skills</li>
+<li class="navbarEntry" id="menuAchievements" onclick='menuAchievementsClicked()'>Achievements</li>
+<li class="navbarEntry" id="menuExamples" onclick='menuExamplesClicked()'>Example Script</li>
+<li class="navbarEntry" id="menuEducation" onclick='menuEducationClicked()'>Education</li>
+<li class="navbarEntry" id="menuAboutMe" onclick='menuAboutMeClicked()'>About Me</li>
+<li class="navbarEntry" id="menuReferences" onclick='menuReferencesClicked()'>References</li>
+<li class="navbarEntry" id="menuGames" onclick='menuGamesClicked()'>Fun &amp; Games</li>
+</ul>
+</td>
+
+<td id='main' style='border-top: 3px; border-right: 0; border-bottom: 0; border-left: 0; border-style: solid; border-color: #CC0000;'>
+<div class='section' id='summary'>
+<br/>
+
+<h2>Summary</h2>&nbsp;&nbsp;&nbsp;Resourceful, self-motivated Information Technology professional with demonstrated strengths in system support and development.  Proven track record in programming and timely completion of assignments.  Trained in utilizing many applications and programming languages across various operating systems.  Excellent technical, organizational and interpersonal skills.  Ambitious, hard working, and detail-oriented.<br/>
+
+<br/>
+<h2>Experience</h2><br/>
+&nbsp;&nbsp;&nbsp;<strong>Bank of America, April 2008 - Present</strong><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Contractor, AIX Systems Administration</strong>
+<table>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>AIX infrastructure scripting</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Problem resolution - anything from full drives to server crashes</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>System Health Analysis</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>R&D</td></tr>
+</table>
+<br/>
+&nbsp;&nbsp;&nbsp;<strong>TAMES HRS, Inc, 2002 - 2007</strong><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Senior Programmer (and unofficial Systems Administrator)</strong>
+<table>
+  <!--See the css for fake_list_bullet/text for info on why I did this-->
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Administrator for Linux Servers, Windows Servers 2000/2003, Windows workstations.  </td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Assisted all users with installing and using our software (helpdesk and on-site).</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Maintained internal software (daily backups, Active Directory, Progress Database Software, Windows Updates, AVG Anti-Virus, VPN management, Cisco routers, Apache, etc).</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Designed, created, and maintained all programs used by our clients.</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Instructed and trained all users in the proper use of our software (on-site).</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Special Project - Project Manager/Lead Programmer for the <a href='https://www.itames.com'>iTAMES website</a></td></tr>
+  <tr><td>&nbsp;</td><td>
+        <table style='font-size: 80%;'>
+		  <tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Secure LAMP-based website for billing entry</td></tr>
+		  <tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Architect for the new DMZ</td></tr>
+		  <tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Managed T1 and DSL configuration</td></tr>
+        </table>
+      </td>
+  </tr>
+</table>
+<br/>
+&nbsp;&nbsp;&nbsp;<strong>Calvin College, 1999 - 2002</strong><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Information Technology Center Assistant System Administrator</strong>
+<table>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Maintained the student computer lab images (Windows 95/98/2000).</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Provided hands-on training of equipment and software among student employees of all levels.</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Resolved technical and personnel problems in the lab; made sure it ran smoothly.</td></tr>
+  <tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Researched and implemented ways to make the Information Technology Center more user-friendly and efficient.</td></tr>
+</table>
+<br/>
+<h2>Education</h2><br/>
+&nbsp;&nbsp;&nbsp;<strong>Calvin College</strong> - BCS in Computer Science, Software Engineering (GPA 3.16)<br/>
+<br/>
+<h2>Known Operating Systems and Languages</h2>
+<table>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Microsoft Windows (all variants, including 3.1)</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Unix/Linux</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Novell ZENworks</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>C++</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Javascript</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Visual Basic 6</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>SQL</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>HTML</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>PHP</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'>Perl</td></tr>
+</table>
+<br/>
+</div>
+
+<div class='section' id='employmentHistory'>
+<br/>
+<h2>Bank of America, 04/2008 - Present</h2><br/>
+<strong>Contractor - AIX Systems Administration</strong><br/>
+<br/>
+I am currently employed at the Bank of America as a dedicated AIX Systems Administrator
+for the BACARDI database system.  My duties regularly require creating and updating
+Korn shell and Perl scripts.  I am among the last line of defense for AIX issues, so
+I have often been called in to work on complex issues, such as DR testing, unresponsive
+servers, and end-to-end system design.  At the Bank of America, I have had the opportunity
+to explore the internals of a variety of technologies - I have written scripts to debug
+AIX kernel memory (Perl), as well as a proof-of-concept system that allows direct access
+to an EMC Centera server, using C for the Centera API and MySQL/Perl for the front-end UI.
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>TAMES HRS, Inc, 2002 - 2007</h2><br/>
+<strong>Senior Programmer</strong><br/>
+<br/>
+After graduating from Calvin, I was hired as an assistant programmer for TAMES HRS, Inc.,
+a Medicaid billing service provider for public school districts in Illinois.
+Being in such a specialized field requires specialized software, and my first project
+was to take a proof-of-concept billing program and convert it into a secure
+multi-user system that we could market as "PractAssist".  This project has been so successful
+that it's been my only project (see Achievements).<br/>
+<br/>
+As part of the duties of being the electronic billing support staff, I am the training
+instructor and the technical contact for PractAssist.  I go on-site to help
+set up the PractAssist database on the local networks, install the PractAssist program on all
+client machines, and train all users in the proper use of the system.  When not on-site,
+I deal with any user issues over the phone.<br/>
+<br/>
+When not assisting users, I am in charge of all of our internal servers and routers,
+including all software on those servers (daily backups, Active Directory, Progress Database
+Software, Windows Updates, AVG Anti-Virus, VPN management, etc).<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>Calvin College, 1999 - 2002</h2><br/>
+<strong>Information Technology Center Assistant System Administrator</strong><br/>
+<br/>
+I was originally hired at the Information Technology Center (ITC) to provide support for any users wishing to
+use any ITC computer.  While being up to that task, it was quickly apparent that I had a talent for making
+well-running systems.  I became the first student ITC Assistant System Administrator - they created the position
+for me.<br/>
+<br/>
+In this position, I was in charge of maintaining all student computer lab images (Windows 95/98/2000), training
+student employees at all levels of technical competence, and resolving any technical issues with the labs.  During
+my free time, I researched and implemented ways to improve the ITC (see Achievements).<br/>
+<br/>
+<br/>
+<br/>
+</div>
+
+
+<div class='section' id='skills'>
+<br/>
+<h2>Known Operating Systems</h2><br/>
+<br/>
+<table>
+	<!--See the css for fake_list_bullet/text for info on why I did this-->
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Microsoft Windows</strong></td></tr>
+	<tr><td></td><td><table>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Regularly install/configure/resurrect all versions of Windows (3.1/95/98/Me/NT/2000/XP/2003/Vista)</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Regularly install/configure/fix Office 97/2000/XP (no, it's not part of Windows, but it might as well be)</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Active Directory</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Exchange 2000/2003</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>DNS/DHCP</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>VPN management (Microsoft and OpenVPN)</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Veritas/Symantec Backup Exec</td></tr>
+	</table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Unix/Linux</strong></td></tr>
+	<tr><td><td><table>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Familiar with Solaris 10</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Familiar with Red Hat Linux</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Administrator for five SuSE Linux 10 servers</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>bind</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>apache</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>sshd</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>nfs</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>samba</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>PuTTy</td></tr>
+	</table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Cisco IOS 12.3</strong></td></tr>
+	<tr><td><td><table>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Basic IOS router setup</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Interface configuration</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>IP/Routing</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>General troubleshooting</td></tr>
+	</table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Novell ZENworks</strong></td></tr>
+	<tr><td><td><table>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Application Manager for student computer labs at Calvin College</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Made ZENworks snapshots of all student applications for dynamic lab distribution</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Configured customized .msi installers for the student labs</td></tr>
+	</table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+</table>
+<br/>
+<br/>
+<br/>
+<h2>Known Languages</h2><br/>
+<br/>
+<table>
+	<!--See the css for fake_list_bullet/text for info on why I did this-->
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>C++</strong></td></tr>
+	<tr><td><td><table>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Linux daemons</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Computer graphics (openGL 1.0)</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Miscellaneous programming</td></tr>
+	</table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Java</strong></td></tr>
+	<tr><td><td><table><tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Miscellaneous programming</td></tr></table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Javascript</strong></td></tr>
+	<tr><td><td><table><tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>HTML interactivity</td></tr></table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Visual Basic 6.0</strong></td></tr>
+	<tr><td><td><table>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Database Applications (Microsoft Access)</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Miscellaneous programming</td></tr>
+	</table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>SQL</strong></td></tr>
+	<tr><td><td><table>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>MySQL</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Firebird</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>MS Access</td></tr>
+	</table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>HTML</strong></td></tr>
+	<tr><td><td><table>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Websites</td></tr>
+			<tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Resumes</td></tr>
+	</table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>PHP</strong></td></tr>
+	<tr><td><td><table><tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Dynamic HTML creation</td></tr></table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Perl</strong></td></tr>
+	<tr><td><td><table><tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Dynamic HTML creation</td></tr></table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td class='fake_list_bullet'>&#8226;</td><td class='fake_list_text'><strong>Bash shell scripting</strong></td></tr>
+	<tr><td><td><table><tr><td class='fake_list_bullet' style='font-size: 80%;'>&gt;</td><td class='fake_list_text'>Miscellaneous programming (what else would you do with bash?)</td></tr></table></td></tr>
+	<tr><td>&nbsp;</td></tr>
+</table>
+</div>
+
+
+<div class='section' id='achievements'>
+<br/>
+<h2>Application Management Infrastructure upgrade, summer 2001 (Calvin)</h2><br/>
+Prior to this project, the Student Lab Technical Team (me) had to make a complete
+partition image of each student lab.  Any upgrade to any program required a change
+to each lab image that used that program, and a full lab re-imaging.  After the
+network server guys got ZENworks working, I was assigned the task of reorganizing
+the way applications were maintained.  Long story short, threw away our old images,
+made one image per OS (instead of one image per lab), and I used ZENworks (Novell's
+Application Management System) to create snapshots of each application.  ZENworks
+dynamically installs each program for each lab, and dynamically upgrades any
+program any time changes were made to the master snapshot for that application.<br/>
+<br/>
+<br/>
+<h2>PractAssist Server, spring/summer 2005 (TAMES)</h2><br/>
+While my employment at TAMES HRS, Inc. could be summarized as "develop PractAssist",
+the PractAssist Server deserves special mention.  Developing the PractAssist Server
+gave us the ability to track user data better than our prior processes, create a
+significantly easier method of data transmission for our clients, and enable us to
+finally provide in-depth feedback to the users.  The PractAssist Server is a Firebird
+database and a set of Linux daemons that are designed to constantly listen
+for multiple, simultaneous client programs that wish to request or submit data to us,
+and facilitate the transfer of that data.  <br/>
+<br/>
+If the client requests any information (including program updates), the network server
+enters a work order into the database for the request server to deal with.  If there
+is any data that has been submitted with this connection, then the network server
+also enters a work order for the load server to process.  After the request server
+has signaled that it is finished gathering all the data, the network server gives that
+data to the client.  Splitting the job into three parts (network, request, and load)
+allows for greater system security and efficiency.<br/>
+<br/>
+The Firebird database is the heart and soul of the PractAssist Server.  There's not much
+interesting to say about it, though, since it's a database.  Funny how that works.
+OK, I was wrong.  The interesting thing is that it formed the basis for the iTAMES website.<br/>
+<br/>
+<br/>
+<h2>iTAMES, 2006-2007</h2><br/>
+iTAMES is an SSL-secured website that is designed to replace our current method of billing
+service entry.  The secure design of our website required an upgrade in our network
+infrastructure, which I had to design and implement as part of this project.  As project
+leader, I was responsible for everything, from the original timeline to the thoroughness
+of the testing phase.<br/>
+<br/>
+The overall structure of the website is very secure, with each page request being checked
+with the logged-in user's security level.  The data on each page is strictly checked to
+make sure the data being submitted is valid.<br/>
+<br/>
+The website is fairly modular.  Of course, there is the single-sign-on.  But wait!
+There's more: pages for one type of report are often re-used in other types of
+reports (function-style, not copy/paste).<br/>
+<br/>
+Finally, the website is standards-compliant.  Viewable in Internet Explorer, Firefox, Opera,
+and Safari, it uses XHTML 1.0, CSS, and javascript for some polish (unfortunately,
+tables are still needed, but that's only because IE can't figure out what display:table is).<br/>
+<br/>
+The website is so well designed that the biggest problem that we have is that our users
+keep forgetting their passwords.  Also, this html resume was based off of my work on iTAMES.<br/>
+<br/>
+<strong>iTAMES is my current crowning achievement.  Can you provide me with a new champion?</strong><br/>
+<br/>
+<br/>
+<br/>
+</div>
+
+
+<div class='section' id='examples'>
+<br/>
+#!/bin/sh<br/>
+#<br/>
+# ************************************************************<br/>
+# anyinstall.sh -- A script to reign in the *nix package<br/>
+# management madness.  Will find your package manager and<br/>
+# attempt to install the requested package.  Intended to be a<br/>
+# wrapper script with a standard, simplified UI for easy<br/>
+# installations.<br/>
+# John Medema, 11/07.<br/>
+# Freely distributable, no copyrights.<br/>
+#<br/>
+# If no switches are given, anyinstall will assume -i.<br/>
+# Standard Usage (install):   anyinstall.sh &lt;package&gt;<br/>
+# Standard Usage (remove)     anyinstall.sh -r &lt;package&gt;<br/>
+#<br/>
+# Switches:<br/>
+# i   --  install using the default package manager<br/>
+# ia  --  install using apt-get<br/>
+# ie  --  install using emerge<br/>
+# ipo --  install using BSD's Ports<br/>
+# ipa --  install using BSD's Package<br/>
+# ir  --  install using rpm<br/>
+# h   --  print usage info<br/>
+# r   --  remove &lt;package&gt; using the default package manager<br/>
+# ra  --  force remove using apt-get<br/>
+# re  --  force remove using emerge<br/>
+# rpo --  force remove using BSD's Ports<br/>
+# rpa --  force remove using BSD's Package<br/>
+# rr  --  force remove using rpm<br/>
+#<br/>
+# Switches are not mutually exclusive.  `anyinstall.sh -ia -ir &lt;package&gt;`<br/>
+# will attempt to install &lt;package&gt; first through apt-get, then<br/>
+# install &lt;package&gt; again via rpm (regardless of the result of<br/>
+# the attempt with apt-get!).<br/>
+# Similarly, `anyinstall.sh -rr -ir &lt;package&gt;` will attempt to<br/>
+# to remove &lt;package&gt; via rpm, then attempt to install &lt;package&gt;<br/>
+# via rpm.<br/>
+# As shown by the prior example, SWITCH ORDER IS IMPORTANT!!!!<br/>
+#<br/>
+# Notes:<br/>
+# 1) Supports apt-get, rpm, emerge, and BSD's Ports/Package.<br/>
+# 2) Will attempt to resolve dependencies on installs.<br/>
+# 3) Will NOT attempt to remove unneeded dependencies on removes.<br/>
+# 4) -i acts as install and update.  There are no specific<br/>
+#    update commands.<br/>
+# 5) Only one package per script invocation.<br/>
+#<br/>
+# ****************************************************************<br/>
+<br/>
+# some constants...<br/>
+usage="anyinstall.sh &lt;package&gt;\nSwitches>: i:&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;install using the default package manager.\nia&nbsp;&nbsp;--&nbsp;&nbsp;install using apt-get\nie&nbsp;&nbsp;--&nbsp;&nbsp;install using emerge\nipo&nbsp;--&nbsp;&nbsp;install using BSD's Ports\nipa&nbsp;--&nbsp;&nbsp;install using BSD's Package\nir&nbsp;&nbsp;--&nbsp;&nbsp;install using rpm\nh&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;print usage info\nr&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;remove &lt;package&gt; using the default package manager\nra&nbsp;&nbsp;--&nbsp;&nbsp;force remove using apt-get\nre&nbsp;&nbsp;--&nbsp;&nbsp;force remove using emerge\nrpo&nbsp;--&nbsp;&nbsp;force remove using BSD's Ports\nrpa&nbsp;--&nbsp;&nbsp;force remove using BSD's Package\nrr&nbsp;&nbsp;--&nbsp;&nbsp;force remove using rpm\n\n"<br/>
+apt="apt-get"<br/>
+aptinst="install"<br/>
+aptrem="remove"<br/>
+rpm="rpm"<br/>
+rpminst="-U"<br/>
+rpmrem="-e"<br/>
+emerge=""<br/>
+emergeinst="emerge"<br/>
+emergerem="unmerge"<br/>
+bsdPackage=""<br/>
+bsdPackageinst="pkg_add"<br/>
+bsdPackagerem="pkg_delete"<br/>
+bsdPort=""<br/>
+bsdPortinst="make build"<br/>
+bsdPortrem=""<br/>
+<br/>
+<br/>
+# loop through cmd-line args and determine if we need to search<br/>
+# for the default package manager.<br/>
+# Also, we need to find what package to manipulate.<br/>
+noCmdGiven=1;<br/>
+useDefault=0;<br/>
+package="";<br/>
+for arg in $@;<br/>
+do<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;case $arg in<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-h)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# assume that the user doesn't know what they're doing and bail.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo $usage<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-i|-r)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;useDefault=1<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noCmdGiven=0<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-ia|-ie|-ipa|-ipo|-ir|-ra|-re|-rpa|-rpo|-rr)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;noCmdGiven=0<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;package=$arg<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;esac<br/>
+done<br/>
+<br/>
+<br/>
+if [ $noCmdGiven -eq 1 ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;useDefault=1;<br/>
+fi<br/>
+<br/>
+<br/>
+# if using the default package manager, then find out what it is by<br/>
+# checking common locations for the known binaries.<br/>
+defaultBin=""<br/>
+if [ $useDefault -eq 1 ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;# This is the order of our search for our default<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;# package manager --&gt; apt-get, rpm, emerge,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;# BSD Package, BSD Port<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;for bin in $apt $rpm $emergeinst $bsdPackageinst $bsdPortinst;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;do<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if [ "$defaultBin" != "" ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# do nothing<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dummy=""<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif [ "$defaultinst" != "" ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# do nothing<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dummy=""<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for location in `echo $PATH | sed -e 's/:/ /g'`;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if [ -x $location/$bin ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultBin=$location/$bin<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if [ "$bin" = "$apt" ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultinst=$aptinst<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultrem=$aptrem<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif [ "$bin" = "$rpm" ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultinst=$rpminst<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultrem=$rpmrem<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif [ "$bin" = "$emergeinst" ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultBin=""<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultinst=$emergeinst<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultrem=$emergerem<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif [ "$bin" = "$bsdPackageinst" ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultBin=""<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultinst=$bsdPackageinst<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultrem=$bsdPackagerem<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif [ "$bin" = "$bsdPortinst" ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultBin=""<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultinst=$bsdPortinst<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultrem=$bsdPortrem<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fi<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fi<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;done<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fi<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;done<br/>
+fi<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+# finally, run through the requested actions.<br/>
+# but first, a quick hack for when the user just runs with defaults<br/>
+if [ $noCmdGiven -eq 1 ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;$defaultBin $defaultinst $package<br/>
+fi<br/>
+for arg in $@;<br/>
+do<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;case $arg in<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-i)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$defaultBin $defaultinst $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-ia)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$apt $aptinst $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-ie)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$emerge $emergeinst $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-ipa)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$bsdPackage $bsdPackageinst $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-ipo)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;portsdir=$PORTSDIR<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if [ "$portsdir" = "" ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if [ -d /usr/ports ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;portsdir="/usr/ports"<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif [ -d /usr/pkgsrc ] ; then<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;portsdir="/usr/pkgsrc"<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;portsdir="/usr/src"<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fi<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fi<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd $portsdir/$package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$bsdPort $bsdPortinst<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-ir)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$rpm $rpminst $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-r)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$defaultBin $defaultrem $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-ra)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$apt $aptrem $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-re)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$emerge $emergerem $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-rpa)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$bsdPackage $bsdPackagerem $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-rpo)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Ports does not support package removal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# $bsdPort $bsdPortrem $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-rr)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$rpm $rpmrem $package<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;esac<br/>
+done<br/>
+<br/>
+<br/>
+<br/>
+</div>
+
+
+<div class='section' id='education'>
+<br/>
+<h2>Calvin College</h2><br/>
+<strong>Bachelor of Computer Science, Software Engineering</strong><br/>
+<table style='text-align: right;'>
+<tr><td><strong>Cumulative GPA: </strong></td><td class='education_grade'><strong>3.156</strong></td></tr>
+<tr><td><strong>Major GPA: </strong></td><td class='education_grade'><strong>3.343</strong></td></tr>
+</table>
+<br/>
+<br/>
+<table>
+<tr><td colspan='2'><strong>Computer Science classes</strong></td></tr>
+<tr><td>Intro to Computing with C++</td><td class='education_grade'>B-</td></tr>
+<tr><td>Intro to Data Structures with C++</td><td class='education_grade'>A</td></tr>
+<tr><td>Programming Language Concepts</td><td class='education_grade'>B+</td></tr>
+<tr><td>Discrete Math for Computer Science</td><td class='education_grade'>B+</td></tr>
+<tr><td>Intro to Computer Architecture</td><td class='education_grade'>B</td></tr>
+<tr><td>Data Structures &amp; Algorithms</td><td class='education_grade'>B+</td></tr>
+<tr><td>Operating Systems</td><td class='education_grade'>B+</td></tr>
+<tr><td>Cryptography &amp; Computer Security<br/>
+<span style='font-size:75%;'>(interim class)</span></td><td class='education_grade'>--</td></tr>
+<tr><td>Database Management Systems</td><td class='education_grade'>B+</td></tr>
+<tr><td>Internship in Computing</td><td class='education_grade'>A</td></tr>
+<tr><td>Advanced Logic</td><td class='education_grade'>C</td></tr>
+<tr><td>Perspectives on Computing</td><td class='education_grade'>A</td></tr>
+<tr><td>Computer Graphics</td><td class='education_grade'>B+</td></tr>
+<tr><td>Database Administration</td><td class='education_grade'>A</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td colspan='2'><strong>Other classes</strong></td></tr>
+<tr><td>Calculus I</td><td class='education_grade'>A-</td></tr>
+<tr><td>Calculus II</td><td class='education_grade'>B</td></tr>
+<tr><td>Applied Linear Algebra</td><td class='education_grade'>B</td></tr>
+<tr><td>Intermediate Spanish I</td><td class='education_grade'>C+</td></tr>
+<tr><td>Intermediate Spanish II</td><td class='education_grade'>B</td></tr>
+<tr><td>Modern &amp; Classical Physics I</td><td class='education_grade'>A-</td></tr>
+<tr><td>Modern &amp; Classical Physics II</td><td class='education_grade'>A-</td></tr>
+<tr><td>Basic Electrical Measurements</td><td class='education_grade'>B+</td></tr>
+<tr><td>Electrical Measurements</td><td class='education_grade'>A-</td></tr>
+<tr><td>General Chemistry</td><td class='education_grade'>B-</td></tr>
+<tr><td>Western Civilization</td><td class='education_grade'>C+</td></tr>
+<tr><td>Biblical Literature &amp; Theology</td><td class='education_grade'>B-</td></tr>
+<tr><td>General Church History</td><td class='education_grade'>C</td></tr>
+<tr><td>Classical Mythology</td><td class='education_grade'>B</td></tr>
+<tr><td>Understanding Literature</td><td class='education_grade'>B+</td></tr>
+<tr><td>Tennis I</td><td class='education_grade'>B</td></tr>
+<tr><td>Tennis II</td><td class='education_grade'>B</td></tr>
+<tr><td>Fundamentals of Oral Rhetoric</td><td class='education_grade'>B</td></tr>
+<tr><td>Weight Training</td><td class='education_grade'>B+</td></tr>
+<tr><td>Written Rhetoric</td><td class='education_grade'>B+</td></tr>
+<tr><td>Introduction to Philosophy</td><td class='education_grade'>B+</td></tr>
+<tr><td>Introductory Psychology</td><td class='education_grade'>A</td></tr>
+<tr><td>Principals of Economics</td><td class='education_grade'>B</td></tr>
+<tr><td>Christian Perspectives on Learning</td><td class='education_grade'>B+</td></tr>
+</table>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</div>
+
+
+<div class='section' id='aboutMe'>
+<br/>
+Sorry!  This feature is not enabled in the free version of the resume.<br/>
+<br/>
+To find out all you ever wanted to know, please call the phone number <br/>
+at the top of the screen to schedule an interview.<br/>
+<br/>
+</div>
+
+
+<div class='section' id='references'>
+<br/>
+<h2><strong>References</strong></h2><br/>
+<br/>
+<br/>
+<strong>Charles Preston</strong> - VP; Sr. Technology Manager, Bank of America<br/>
+Business Address/Phone:<br/>
+201 E. Washington St.<br/>
+AZ1-200-21-21<br/>
+Phoenix, AZ 85004<br/>
+charles.h.preston@bankofamerica.com<br/>
+602-523-2672<br/>
+<br/>
+<strong>Bruce Groenendal</strong> - IT Manager, Tames HRS, Inc.<br/>
+Business Address/Phone:<br/>
+379 E Sibley Blvd<br/>
+Suite 201<br/>
+Harvey, IL 60426<br/>
+bruceg@tameshrs.com<br/>
+708-596-2555<br/>
+<br/>
+<strong>Michael Muckian</strong> - Executive Director, Tames HRS, Inc.<br/>
+muckian@tameshrs.com<br/>
+708-596-2555<br/>
+<br/>
+<br/>
+<strong>Brenda Van Pelt</strong> - Information Technology Center Manager, Calvin College<br/>
+Home Address/Phone:<br/>
+430 Main St. #1<br/>
+Lafayette, IN 47901<br/>
+bberkela@purdue.edu<br/>
+616-243-4312<br/>
+<br/>
+<strong>Rick DeVries</strong> - Assistant Director of Technology Integration, Calvin College<br/>
+Business Address/Phone:<br/>
+Calvin Information Technology<br/>
+Hekman Library 106<br/>
+3201 Burton Street SE<br/>
+Grand Rapids, MI 49546<br/>
+rickdv@calvin.edu<br/>
+616-526-7125<br/>
+<br/>
+<br/>
+<strong>Lawrence Meekma, DDS</strong> - Satisfied business computer user<br/>
+Business Address/Phone:<br/>
+7400 W College Dr<br/>
+Palos Heights, IL 60463<br/>
+lmeekma@comcast.net<br/>
+708-448-3399<br/>
+<br/>
+<br/>
+<strong>Evelyn Hendrickson</strong> - Satisfied home computer user<br/>
+Home Address/Phone:<br/>
+15304 Oak Rd<br/>
+Oak Forest, IL 60452<br/>
+dutchmom809@aol.com<br/>
+708-687-2666<br/>
+<br/>
+</div>
+
+
+<div class='section' id='games'>
+<br/>
+<strong>The magic oracle awaits...</strong><br/>
+<input id='games_oracle_input' type='text' size='20' style='padding-right: 1em;' /><button onclick='games_oracle()'>Ask</button><br/>
+<br/>
+<label id='games_oracle_response'></label><br/>
+<br/>
+<hr/>
+<br/>
+<table>
+<tr>
+<td style='padding-right: 4em;'>
+<strong>Tic-Tac-Toe</strong><br/>
+<input id="games_ttt_singlePlayer" name="players" type="radio" checked='checked' /> 1 player<br/>
+<input id="games_ttt_multiPlayer" name="players" type="radio" /> 2 players<br/>
+</td>
+<td style='padding-right: 4em;'>
+<table>
+<tr class='games_ttt_row'>
+<td class='games_ttt_cell' onclick='games_ttt_r0c0Clicked()' style='border-left: 0; border-top: 0;'><label id="games_ttt_r0c0">&nbsp;</label></td>
+<td class='games_ttt_cell' onclick='games_ttt_r0c1Clicked()' style='border-top: 0;'><label id="games_ttt_r0c1">&nbsp;</label></td>
+<td class='games_ttt_cell' onclick='games_ttt_r0c2Clicked()' style='border-top: 0; border-right: 0;'><label id="games_ttt_r0c2">&nbsp;</label></td>
+</tr>
+<tr class='games_ttt_row'>
+<td class='games_ttt_cell' onclick='games_ttt_r1c0Clicked()' style='border-left: 0; '><label id="games_ttt_r1c0">&nbsp;</label></td>
+<td class='games_ttt_cell' onclick='games_ttt_r1c1Clicked()' style=''><label id="games_ttt_r1c1">&nbsp;</label></td>
+<td class='games_ttt_cell' onclick='games_ttt_r1c2Clicked()' style='border-right: 0;'><label id="games_ttt_r1c2">&nbsp;</label></td>
+</tr>
+<tr class='games_ttt_row'>
+<td class='games_ttt_cell' onclick='games_ttt_r2c0Clicked()' style='border-left: 0; border-bottom: 0;'><label id="games_ttt_r2c0">&nbsp;</label></td>
+<td class='games_ttt_cell' onclick='games_ttt_r2c1Clicked()' style='border-bottom: 0;'><label id="games_ttt_r2c1">&nbsp;</label></td>
+<td class='games_ttt_cell' onclick='games_ttt_r2c2Clicked()' style='border-bottom: 0; border-right: 0;'><label id="games_ttt_r2c2">&nbsp;</label></td>
+</tr>
+</table>
+</td>
+<td style='padding-right: 4em;'>
+<label id="games_ttt_status">Player X's turn</label><br/>
+<br/>
+<input id="games_ttt_reset" type='submit' value='Reset' onclick='games_ttt_reset()' /><br/>
+</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<br/>
+<strong>Chess</strong> (2 player only)<br/>
+<br/>
+<table>
+<tr>
+<td>
+<table cellpadding='0' cellspacing='0' >
+<tr class='games_chess_row'>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r0c0Clicked(this)' id="games_chess_r0c0">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r0c1Clicked(this)' id="games_chess_r0c1">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r0c2Clicked(this)' id="games_chess_r0c2">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r0c3Clicked(this)' id="games_chess_r0c3">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r0c4Clicked(this)' id="games_chess_r0c4">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r0c5Clicked(this)' id="games_chess_r0c5">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r0c6Clicked(this)' id="games_chess_r0c6">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r0c7Clicked(this)' id="games_chess_r0c7">&nbsp;</div></td>
+</tr>
+<tr class='games_chess_row'>
+<td class='games_chess_cell_light'><div onclick='games_chess_r1c0Clicked(this)' id="games_chess_r1c0">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r1c1Clicked(this)' id="games_chess_r1c1">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r1c2Clicked(this)' id="games_chess_r1c2">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r1c3Clicked(this)' id="games_chess_r1c3">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r1c4Clicked(this)' id="games_chess_r1c4">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r1c5Clicked(this)' id="games_chess_r1c5">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r1c6Clicked(this)' id="games_chess_r1c6">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r1c7Clicked(this)' id="games_chess_r1c7">&nbsp;</div></td>
+</tr>
+<tr class='games_chess_row'>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r2c0Clicked(this)' id="games_chess_r2c0">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r2c1Clicked(this)' id="games_chess_r2c1">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r2c2Clicked(this)' id="games_chess_r2c2">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r2c3Clicked(this)' id="games_chess_r2c3">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r2c4Clicked(this)' id="games_chess_r2c4">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r2c5Clicked(this)' id="games_chess_r2c5">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r2c6Clicked(this)' id="games_chess_r2c6">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r2c7Clicked(this)' id="games_chess_r2c7">&nbsp;</div></td>
+</tr>
+<tr class='games_chess_row'>
+<td class='games_chess_cell_light'><div onclick='games_chess_r3c0Clicked(this)' id="games_chess_r3c0">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r3c1Clicked(this)' id="games_chess_r3c1">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r3c2Clicked(this)' id="games_chess_r3c2">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r3c3Clicked(this)' id="games_chess_r3c3">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r3c4Clicked(this)' id="games_chess_r3c4">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r3c5Clicked(this)' id="games_chess_r3c5">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r3c6Clicked(this)' id="games_chess_r3c6">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r3c7Clicked(this)' id="games_chess_r3c7">&nbsp;</div></td>
+</tr>
+<tr class='games_chess_row'>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r4c0Clicked(this)' id="games_chess_r4c0">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r4c1Clicked(this)' id="games_chess_r4c1">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r4c2Clicked(this)' id="games_chess_r4c2">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r4c3Clicked(this)' id="games_chess_r4c3">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r4c4Clicked(this)' id="games_chess_r4c4">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r4c5Clicked(this)' id="games_chess_r4c5">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r4c6Clicked(this)' id="games_chess_r4c6">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r4c7Clicked(this)' id="games_chess_r4c7">&nbsp;</div></td>
+</tr>
+<tr class='games_chess_row'>
+<td class='games_chess_cell_light'><div onclick='games_chess_r5c0Clicked(this)' id="games_chess_r5c0">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r5c1Clicked(this)' id="games_chess_r5c1">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r5c2Clicked(this)' id="games_chess_r5c2">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r5c3Clicked(this)' id="games_chess_r5c3">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r5c4Clicked(this)' id="games_chess_r5c4">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r5c5Clicked(this)' id="games_chess_r5c5">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r5c6Clicked(this)' id="games_chess_r5c6">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r5c7Clicked(this)' id="games_chess_r5c7">&nbsp;</div></td>
+</tr>
+<tr class='games_chess_row'>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r6c0Clicked(this)' id="games_chess_r6c0">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r6c1Clicked(this)' id="games_chess_r6c1">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r6c2Clicked(this)' id="games_chess_r6c2">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r6c3Clicked(this)' id="games_chess_r6c3">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r6c4Clicked(this)' id="games_chess_r6c4">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r6c5Clicked(this)' id="games_chess_r6c5">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r6c6Clicked(this)' id="games_chess_r6c6">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r6c7Clicked(this)' id="games_chess_r6c7">&nbsp;</div></td>
+</tr>
+<tr class='games_chess_row'>
+<td class='games_chess_cell_light'><div onclick='games_chess_r7c0Clicked(this)' id="games_chess_r7c0">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r7c1Clicked(this)' id="games_chess_r7c1">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r7c2Clicked(this)' id="games_chess_r7c2">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r7c3Clicked(this)' id="games_chess_r7c3">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r7c4Clicked(this)' id="games_chess_r7c4">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r7c5Clicked(this)' id="games_chess_r7c5">&nbsp;</div></td>
+<td class='games_chess_cell_light'><div onclick='games_chess_r7c6Clicked(this)' id="games_chess_r7c6">&nbsp;</div></td>
+<td class='games_chess_cell_dark' ><div onclick='games_chess_r7c7Clicked(this)' id="games_chess_r7c7">&nbsp;</div></td>
+</tr>
+</table>
+<div style='display:none;' class='games_chess_dummy_board'>
+<div id="games_chess_dummy_r0c0">&nbsp;</div>
+<div id="games_chess_dummy_r0c1">&nbsp;</div>
+<div id="games_chess_dummy_r0c2">&nbsp;</div>
+<div id="games_chess_dummy_r0c3">&nbsp;</div>
+<div id="games_chess_dummy_r0c4">&nbsp;</div>
+<div id="games_chess_dummy_r0c5">&nbsp;</div>
+<div id="games_chess_dummy_r0c6">&nbsp;</div>
+<div id="games_chess_dummy_r0c7">&nbsp;</div>
+<div id="games_chess_dummy_r1c0">&nbsp;</div>
+<div id="games_chess_dummy_r1c1">&nbsp;</div>
+<div id="games_chess_dummy_r1c2">&nbsp;</div>
+<div id="games_chess_dummy_r1c3">&nbsp;</div>
+<div id="games_chess_dummy_r1c4">&nbsp;</div>
+<div id="games_chess_dummy_r1c5">&nbsp;</div>
+<div id="games_chess_dummy_r1c6">&nbsp;</div>
+<div id="games_chess_dummy_r1c7">&nbsp;</div>
+<div id="games_chess_dummy_r2c0">&nbsp;</div>
+<div id="games_chess_dummy_r2c1">&nbsp;</div>
+<div id="games_chess_dummy_r2c2">&nbsp;</div>
+<div id="games_chess_dummy_r2c3">&nbsp;</div>
+<div id="games_chess_dummy_r2c4">&nbsp;</div>
+<div id="games_chess_dummy_r2c5">&nbsp;</div>
+<div id="games_chess_dummy_r2c6">&nbsp;</div>
+<div id="games_chess_dummy_r2c7">&nbsp;</div>
+<div id="games_chess_dummy_r3c0">&nbsp;</div>
+<div id="games_chess_dummy_r3c1">&nbsp;</div>
+<div id="games_chess_dummy_r3c2">&nbsp;</div>
+<div id="games_chess_dummy_r3c3">&nbsp;</div>
+<div id="games_chess_dummy_r3c4">&nbsp;</div>
+<div id="games_chess_dummy_r3c5">&nbsp;</div>
+<div id="games_chess_dummy_r3c6">&nbsp;</div>
+<div id="games_chess_dummy_r3c7">&nbsp;</div>
+<div id="games_chess_dummy_r4c0">&nbsp;</div>
+<div id="games_chess_dummy_r4c1">&nbsp;</div>
+<div id="games_chess_dummy_r4c2">&nbsp;</div>
+<div id="games_chess_dummy_r4c3">&nbsp;</div>
+<div id="games_chess_dummy_r4c4">&nbsp;</div>
+<div id="games_chess_dummy_r4c5">&nbsp;</div>
+<div id="games_chess_dummy_r4c6">&nbsp;</div>
+<div id="games_chess_dummy_r4c7">&nbsp;</div>
+<div id="games_chess_dummy_r5c0">&nbsp;</div>
+<div id="games_chess_dummy_r5c1">&nbsp;</div>
+<div id="games_chess_dummy_r5c2">&nbsp;</div>
+<div id="games_chess_dummy_r5c3">&nbsp;</div>
+<div id="games_chess_dummy_r5c4">&nbsp;</div>
+<div id="games_chess_dummy_r5c5">&nbsp;</div>
+<div id="games_chess_dummy_r5c6">&nbsp;</div>
+<div id="games_chess_dummy_r5c7">&nbsp;</div>
+<div id="games_chess_dummy_r6c0">&nbsp;</div>
+<div id="games_chess_dummy_r6c1">&nbsp;</div>
+<div id="games_chess_dummy_r6c2">&nbsp;</div>
+<div id="games_chess_dummy_r6c3">&nbsp;</div>
+<div id="games_chess_dummy_r6c4">&nbsp;</div>
+<div id="games_chess_dummy_r6c5">&nbsp;</div>
+<div id="games_chess_dummy_r6c6">&nbsp;</div>
+<div id="games_chess_dummy_r6c7">&nbsp;</div>
+<div id="games_chess_dummy_r7c0">&nbsp;</div>
+<div id="games_chess_dummy_r7c1">&nbsp;</div>
+<div id="games_chess_dummy_r7c2">&nbsp;</div>
+<div id="games_chess_dummy_r7c3">&nbsp;</div>
+<div id="games_chess_dummy_r7c4">&nbsp;</div>
+<div id="games_chess_dummy_r7c5">&nbsp;</div>
+<div id="games_chess_dummy_r7c6">&nbsp;</div>
+<div id="games_chess_dummy_r7c7">&nbsp;</div>
+</div>
+</td>
+<td style='padding-left: 4em;'>
+<div id="games_chess_status">White's turn</div><br/>
+<br/>
+<input id="games_chess_reset" type='submit' value='Reset' onclick='games_chess_reset()' />
+<input id="games_chess_turn" type='hidden' value = 'white' />
+<input id="games_chess_mode" type='hidden' value = 'startTurn' />
+<input id="games_chess_positionSelectedStorage" type='hidden' value = '' />
+<input id="games_chess_gameOver" type='hidden' value='0' />
+<input id="games_chess_lastPiece" type='hidden' value='' />
+<input id="games_chess_lastPieceStart" type='hidden' value='' />
+<input id="games_chess_lastPieceEnd" type='hidden' value='' />
+<input id="games_chess_whiteR1Moved" type='hidden' value='0' />
+<input id="games_chess_whiteR2Moved" type='hidden' value='0' />
+<input id="games_chess_whiteKMoved" type='hidden' value='0' />
+<input id="games_chess_blackR1Moved" type='hidden' value='0' />
+<input id="games_chess_blackR2Moved" type='hidden' value='0' />
+<input id="games_chess_blackKMoved" type='hidden' value='0' />
+<div id="games_browserCheck" value = '&nbsp;' style='display: none; color: white;'></div>
+</td>
+<td style='padding-left: 4em;'>
+<strong>Instructions:</strong><br/>
+1) Don't drag pieces.  That's not how it works.<br/>
+2) Click on one of your pieces.<br/>
+3) Click on the space where you want to move your piece.<br/>
+</td>
+</tr>
+</table>
+<br/>
+<br/>
+<br/>
+</div>
+
+
+<div class='section' id='printOnly'>
+<strong>HEY!</strong>&nbsp;&nbsp;&nbsp;Go to
+<a href='http://www.freewebs.com/jmedema'>http://www.freewebs.com/jmedema</a>
+to see the full resume!
+</div>
+
+<div style='display:none;'>
+<center>
+<table width="90%%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><center>
+          <font size="2" face="Arial, Helvetica, sans-serif">This site is hosted
+          for FREE by <a href="http://members.freewebs.com/" rel="nofollow"><img style="border:0px; width:71px; height:16px;" src="http://images.freewebs.com/Images/logo-tm.gif" alt="Freewebs.com" align="absmiddle"></a>. <a href="http://members.freewebs.com/" target="_blank"><font color="#000000">Click here to get your own Free Website!</font></a></font>
+        </center></td>
+    </tr>
+  </table>
+</center>
+</div>
+
+
+</td>
+</tr>
+</table>
+</body>
+</html>

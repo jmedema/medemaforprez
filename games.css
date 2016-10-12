@@ -1,0 +1,79 @@
+<style type='text/css'>
+/*****************************************
+  Resume for John Medema, 04-2007.
+  With the exception of Whatever:hover,
+  all CSS/XHTML/Javascript coded by me.
+  Permission to copy/reproduce/modify
+  for personal use is given, as long
+  as primary/original authorship is retained.
+*****************************************/
+
+tr.games_ttt_row
+{
+}
+
+tr.games_chess_row
+{
+}
+
+td.games_ttt_cell
+{
+	padding-top: .3em;
+	padding-right: .5em;
+	padding-bottom: .3em;
+	padding-left: .5em;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+}
+
+td.games_chess_cell_light
+{
+	height: 1.4em;
+	width: 1.5em;
+	vertical-align: bottom;
+	text-align: center;
+	font-weight: bold;
+	background-color: #999900;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	margin: 0;
+	padding: 0;
+}
+
+td.games_chess_cell_dark
+{
+	height: 1.4em;
+	width: 1.5em;
+	vertical-align: bottom;
+	text-align: center;
+	font-weight: bold;
+	background-color: #707000;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	margin: 0;
+	padding: 0;
+}
+
+div.games_chess_cell_div_selected
+{
+	width: 100%;
+	background-color: #999999;
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+div.games_chess_cell_div_potential_move
+{
+	width: 100%;
+	background-color: #FF4444;
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
