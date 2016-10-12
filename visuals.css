@@ -53,6 +53,15 @@ strong
 }
 
 
+ul
+{
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	margin-left:0;
+}
+
+
 table
 {
 	border-collapse: collapse;
@@ -116,14 +125,6 @@ td.fake_list_text
 }
 
 
-ul
-{
-	margin-top:0;
-	margin-right:0;
-	margin-bottom:0;
-	margin-left:0;
-}
-
 .section { display: none; }
 .xhtml_dummy { display: inline; }
 .printOnly { font-size: 90%; }
@@ -167,32 +168,6 @@ input.hyperlink
 	border-right: 0;
 	border-bottom: 0;
 	border-left: 0;
-}
-
-
-/* This is to be used with the 'ul' tag to create a left justified nav bar. */
-#header
-{
-	padding-left: 5%;
-	text-align: center;
-	/* this would be in 'body' above, but IE doesn't allow it up there */
-	font-size: 80%;
-}
-
-
-#main
-{
-	padding-left: 5%;
-	/* this would be in 'body' above, but IE doesn't allow it up there */
-	font-size: 80%;
-}
-
-
-#navbar
-{
-	width: 18ex;
-	margin-left:2ex;
-	margin-right:2ex;
 }
 
 
@@ -250,16 +225,11 @@ ul.navbar
 	padding-right: 0;
 	padding-bottom: .40em;
 	padding-left: .35em;
+	text-decoration: none;
 }
 
 
-li.navbarEntry
-{
-	margin-left: 0;
-}
-
-
-li.navbarEntry:hover
+.navbarEntry:hover
 {
 	font-weight: bold;
 	color: black;
@@ -271,17 +241,29 @@ li.navbarEntry:hover
 #tagline { font-style:italic; }
 
 
-#CongressChart tr:first-child
+/* This is to be used with the 'ul' tag to create a left justified nav bar. */
+#header
 {
-	font-weight: bold;
+	padding-left: 5%;
+	text-align: center;
+	/* this would be in 'body' above, but IE doesn't allow it up there */
+	font-size: 80%;
 }
 
 
-#CongressChart td
+#main
 {
-	border: 1px solid black;
-	vertical-align: middle;
-	text-align: right;
-	padding-left: 2em;
-	padding-right: 1em;
+	padding-left: 5%;
+	/* this would be in 'body' above, but IE doesn't allow it up there */
+	font-size: 80%;
 }
+
+
+#navbar
+{
+	width: 18ex;
+	margin-left:2ex;
+	margin-right:2ex;
+}
+
+
