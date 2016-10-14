@@ -18,18 +18,31 @@ var sections =
 	"Science",
 	"Contact",
 	"Games"
-]
+];
 
+var jokes = 
+[
+	"Lobotomies are a corporate benefit",
+	"There are 10 types of people who understand binary - those who do and those who don't",
+	"No, I will not fix your computer",
+	"Keep talking, I always yawn like this when I'm interested",
+	"I'd give my left hand to be ambidextrous",
+	"Pizza is God's gift to nerds",
+	"My code doesn't have bugs, it just has random unexpected features"
+];
+
+
+function getJoke() {
+   return jokes[Math.floor(Math.random() * jokes.length)];
+}
+
+function clearAll() { sections.forEach(sectionClear); }
 
 function sectionClear(mySectionName) 
 { 
 	var mySection = document.getElementById(mySectionName);
 	mySection.style.display = "none"; 
 }
-
-
-function clearAll() { sections.forEach(sectionClear); }
-
 
 function sectionClicked (mySectionName)
 {
@@ -38,8 +51,8 @@ function sectionClicked (mySectionName)
 	window.location = ("" + window.location).replace(/#[A-Za-z0-9_]*$/,'') + "#" + mySectionName;
 	var mySection = document.getElementById(mySectionName);
 	mySection.style.display = "block";
+	document.getElementById("joke").textContent=getJoke();
 }
-
 
 window.onload = function ()
 {
