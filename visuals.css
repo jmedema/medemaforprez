@@ -41,6 +41,7 @@ body
 	*/
 
 	font-family: Arial;
+	overflow-y: scroll;  /* force vertical scrollbar */
 	margin-top: 1em;
 	/*margin-right: 10%;*/
 }
@@ -254,7 +255,7 @@ ul.navbar
 /* This is to be used with the 'ul' tag to create a left justified nav bar. */
 #header
 {
-	padding-left: 5%;
+	padding-left: 2%;
 	text-align: center;
 	/* this would be in 'body' above, but IE doesn't allow it up there */
 	font-size: 80%;
@@ -262,8 +263,8 @@ ul.navbar
 
 #main
 {
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
 	border-top: 3px; 
 	border-right: 0; 
 	border-bottom: 0; 
