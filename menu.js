@@ -4,7 +4,6 @@ var sections =
 	"NoTrump",
 	"NoHillary",
 	"WhyMe",
-	"HowToVote",
 	"CongressionalRebalancing",
 	"VotingReform",
 	"United",
@@ -16,7 +15,7 @@ var sections =
 	"NatlSec",
 	"International",
 	"Nasa",
-	"Joser",
+	"Science",
 	"Contact",
 	"Games"
 ]
