@@ -28,7 +28,7 @@ var jokes =
 	"Keep talking, I always yawn like this when I'm interested",
 	"I'd give my left hand to be ambidextrous",
 	"Pizza is God's gift to nerds",
-	"My code doesn't have bugs, it just has random unexpected features"
+	"My code doesn't have bugs, it just has random unexpected features",
 	"If a train station is a place where a train stops, what's a workstation?"
 ];
 
